@@ -16,8 +16,11 @@ import { useEffect } from "react";
  * every internal ratio identical across all window sizes; the trade-off is
  * letterboxing (empty margin) when the window's aspect ratio doesn't match the
  * content's, which is expected and fine.
+ *
+ * fillWidth=true면 wrap이 원본 비율보다 가로로 넓을 때(사이드바를 접었을 때 등) 좌우에 빈 여백이
+ * 생기지 않도록, 요소의 너비를 그 비율만큼 늘린 뒤 높이 기준으로 스케일한다(높이는 그대로).
  */
-export function useScaleToFit(ref, origin = "top center", skipBelow = 768) {
+export function useScaleToFit(ref, origin = "top center", skipBelow = 768, fillWidth = false) {
   useEffect(() => {
     const content = ref.current;
     const wrap = content?.parentElement;
@@ -27,6 +30,7 @@ export function useScaleToFit(ref, origin = "top center", skipBelow = 768) {
 
     function measureAndScale() {
       content.style.transform = "none";
+      if (fillWidth) content.style.width = "";
       // 모바일(≤768px)에서는 통째로 축소하지 않는다 — 축소하면 내용이 읽을 수 없이
       // 작아지고 아래에 빈 letterbox 공간만 남는다. _mobile.scss 가 이 캔버스들을
       // 자연 크기 + 세로 흐름 / 자체 가로 스크롤로 다시 배치한다.
@@ -34,11 +38,15 @@ export function useScaleToFit(ref, origin = "top center", skipBelow = 768) {
         content.style.transformOrigin = "";
         return;
       }
-      const naturalW = content.offsetWidth;
+      let naturalW = content.offsetWidth;
       const naturalH = content.offsetHeight;
       const availW = wrap.clientWidth;
       const availH = wrap.clientHeight;
       if (!naturalW || !naturalH || !availW || !availH) return;
+      if (fillWidth && availW / availH > naturalW / naturalH) {
+        naturalW = Math.round((availW * naturalH) / availH);
+        content.style.width = `${naturalW}px`;
+      }
       const scale = Math.min(availW / naturalW, availH / naturalH);
       content.style.transformOrigin = origin;
       content.style.transform = `scale(${scale})`;

@@ -27,9 +27,10 @@ function MyTimeApp() {
   // 메신저) 하나당 슬라이더+두 창 전체를 하나의 고정 캔버스로 묶어서, My People의
   // 상세보기 패널처럼 항상 정확히 같은 비율로 같이 줄어들고 커지게 한다.
   const mailViewCanvasRef = useRef(null);
-  useScaleToFit(mailViewCanvasRef, "top center", 1200);
+  // 창이 가로로 넓을 때 좌우에 빈 여백이 생기지 않게 캔버스 너비를 늘린다(fillWidth).
+  useScaleToFit(mailViewCanvasRef, "top center", 1200, true);
   const msgViewCanvasRef = useRef(null);
-  useScaleToFit(msgViewCanvasRef, "top center", 1200);
+  useScaleToFit(msgViewCanvasRef, "top center", 1200, true);
 
   return (
     <>
@@ -61,7 +62,7 @@ function MyTimeApp() {
                 <div className="mt-pointer-bg"></div>
                 <div className="mt-pointer-window" id="pointerWindow"></div>
                 <div className="mt-pointer-cursor" id="pointerCursor">
-                  <span className="mt-pointer-cursor-fallback">나</span>
+                  <span className="mt-pointer-cursor-fallback">Me</span>
                 </div>
               </div>
               <div className="mt-pointer-axis" id="pointerAxis"></div>
@@ -78,7 +79,7 @@ function MyTimeApp() {
                         <div className="mt-panel-count" id="panelCount"></div>
                       </div>
                       <div className="mt-panel-summary" id="panelSummary"></div>
-                      <div className="mt-panel-contacts-title">주요 연락처</div>
+                      <div className="mt-panel-contacts-title">Key contacts</div>
                       <div className="mt-panel-contacts" id="panelContacts"></div>
                     </div>
                   </div>
@@ -88,7 +89,7 @@ function MyTimeApp() {
               <div className="mt-kw-panel mt-card" id="mtKwPanel">
                 <div className="mt-kw-header">
                   <div className="mt-kw-title" id="mtKwTitle">
-                    키워드
+                    Keywords
                   </div>
                   <button
                     type="button"
@@ -97,11 +98,11 @@ function MyTimeApp() {
                     style={{ display: "none" }}
                   >
                     <i className="bi bi-arrow-left"></i>
-                    <span>키워드 목록으로</span>
+                    <span>Back to keywords</span>
                   </button>
                 </div>
                 <div className="mt-kw-hint" id="mtKwHint">
-                  키워드를 클릭하시면 일별 그래프가 나타납니다.
+                  Click a keyword to see its daily chart.
                 </div>
                 <div className="mt-kw-body" id="mtKwBody"></div>
               </div>
@@ -122,7 +123,7 @@ function MyTimeApp() {
                 <div className="mt-pointer-bg"></div>
                 <div className="mt-pointer-window" id="msgPointerWindow"></div>
                 <div className="mt-pointer-cursor" id="msgPointerCursor">
-                  <span className="mt-pointer-cursor-fallback">나</span>
+                  <span className="mt-pointer-cursor-fallback">Me</span>
                 </div>
               </div>
               <div className="mt-pointer-axis" id="msgPointerAxis"></div>
@@ -138,7 +139,7 @@ function MyTimeApp() {
                         <div className="mt-panel-period" id="msgPanelPeriod"></div>
                       </div>
                       <div className="mt-panel-summary" id="msgPanelSummary"></div>
-                      <div className="mt-panel-contacts-title">주요 연락처</div>
+                      <div className="mt-panel-contacts-title">Key contacts</div>
                       <div className="mt-panel-contacts" id="msgPanelContacts"></div>
                     </div>
                   </div>
@@ -148,7 +149,7 @@ function MyTimeApp() {
               <div className="mt-kw-panel mt-card" id="msgKwPanel">
                 <div className="mt-kw-header">
                   <div className="mt-kw-title" id="msgKwTitle">
-                    키워드
+                    Keywords
                   </div>
                   <button
                     type="button"
@@ -157,11 +158,11 @@ function MyTimeApp() {
                     style={{ display: "none" }}
                   >
                     <i className="bi bi-arrow-left"></i>
-                    <span>키워드 목록으로</span>
+                    <span>Back to keywords</span>
                   </button>
                 </div>
                 <div className="mt-kw-hint" id="msgKwHint">
-                  키워드를 클릭하시면 일별 그래프가 나타납니다.
+                  Click a keyword to see its daily chart.
                 </div>
                 <div className="mt-kw-body" id="msgKwBody"></div>
               </div>

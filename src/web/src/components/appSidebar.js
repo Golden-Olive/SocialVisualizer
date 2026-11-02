@@ -7,6 +7,11 @@ Shared left sidebar (mail account / messenger chatroom picker) used by My People
 Syncs selection with the global store and handles collapse toggle and item clicks.
  */
 
+// 영어 데모 페이지(demo/demoFetch.js가 GW_DEMO_EN을 켠 My People/My Time)에서만 영어 문구를 쓴다.
+function t(ko, en) {
+  return window.GW_DEMO_EN ? en : ko;
+}
+
 export function renderAppSidebar(containerId = "app-sidebar") {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -21,19 +26,19 @@ export function renderAppSidebar(containerId = "app-sidebar") {
       <div class="gws-rail-inner">
         <!-- "데이터 선택" 제목을 접기 버튼과 같은 줄(맨 위)에 둠 -->
         <div class="gws-rail-top">
-          <div class="gws-panel-title">소셜 데이터 선택</div>
-          <button type="button" id="sidebar-toggle-btn" class="gws-collapse-btn" title="사이드바 접기/펼치기">
+          <div class="gws-panel-title">${t("소셜 데이터 선택", "Select social data")}</div>
+          <button type="button" id="sidebar-toggle-btn" class="gws-collapse-btn" title="${t("사이드바 접기/펼치기", "Collapse/expand sidebar")}">
             <i class="bi bi-chevron-left"></i>
           </button>
         </div>
 
         <nav class="gws-group">
-          <div class="gws-group-label"><i class="bi bi-envelope"></i><span>메일 계정 선택</span></div>
+          <div class="gws-group-label"><i class="bi bi-envelope"></i><span>${t("메일 계정 선택", "Mail accounts")}</span></div>
           <ul class="gws-list" id="sidebar-mail-list"></ul>
         </nav>
 
         <nav class="gws-group">
-          <div class="gws-group-label"><i class="bi bi-chat-dots"></i><span>메신저 데이터 선택</span></div>
+          <div class="gws-group-label"><i class="bi bi-chat-dots"></i><span>${t("메신저 데이터 선택", "Messenger data")}</span></div>
           <ul class="gws-list" id="sidebar-msg-list"></ul>
         </nav>
       </div>
@@ -44,7 +49,7 @@ export function renderAppSidebar(containerId = "app-sidebar") {
          정확히 같은 범위(top:60px~bottom:0)에만 그림자가 지도록 함. -->
     <div class="gws-rail-shadow" aria-hidden="true"></div>
     <!-- 좁은 화면 전용(_mobile.scss 에서만 표시): 드로어를 여는 플로팅 버튼 + 백드롭 -->
-    <button type="button" id="gws-mobile-open" class="gws-mobile-open" aria-label="소셜 데이터 선택 열기">
+    <button type="button" id="gws-mobile-open" class="gws-mobile-open" aria-label="${t("소셜 데이터 선택 열기", "Open social data picker")}">
       <i class="bi bi-funnel-fill"></i>
     </button>
     <div class="gws-rail-backdrop" id="gws-rail-backdrop" hidden></div>
@@ -144,7 +149,7 @@ export function refreshSidebarList() {
 
   mailListEl.innerHTML =
     mails.length === 0
-      ? `<li class="gws-empty"><i class="bi bi-inbox"></i><span>수집된 메일 계정 없음</span></li>`
+      ? `<li class="gws-empty"><i class="bi bi-inbox"></i><span>${t("수집된 메일 계정 없음", "No mail accounts collected")}</span></li>`
       : mails
           .map((m) => {
             const isActive = !currentRoom && m.id === currentMail;
@@ -152,14 +157,14 @@ export function refreshSidebarList() {
               <li class="gws-item ${isActive ? "is-active" : ""}" data-type="mail" data-value="${escapeAttr(m.id)}" title="${escapeAttr(m.label)}">
                 <span class="gws-item-icon"><i class="bi bi-envelope-fill"></i></span>
                 <span class="gws-item-text">${escapeHtml(m.label)}</span>
-                ${m.indexed ? "" : '<span class="gws-item-badge">(생성 중)</span>'}
+                ${m.indexed ? "" : `<span class="gws-item-badge">${t("(생성 중)", "(Generating)")}</span>`}
               </li>`;
           })
           .join("");
 
   msgListEl.innerHTML =
     rooms.length === 0
-      ? `<li class="gws-empty"><i class="bi bi-inbox"></i><span>수집된 메신저 데이터 없음</span></li>`
+      ? `<li class="gws-empty"><i class="bi bi-inbox"></i><span>${t("수집된 메신저 데이터 없음", "No messenger data collected")}</span></li>`
       : rooms
           .map((r) => {
             const isActive = !currentMail && r.id === currentRoom;
@@ -167,7 +172,7 @@ export function refreshSidebarList() {
               <li class="gws-item ${isActive ? "is-active" : ""}" data-type="room" data-value="${escapeAttr(r.id)}" title="${escapeAttr(r.label)}">
                 <span class="gws-item-icon"><i class="bi bi-chat-dots-fill"></i></span>
                 <span class="gws-item-text">${escapeHtml(r.label)}</span>
-                ${r.indexed ? "" : '<span class="gws-item-badge">(생성 중)</span>'}
+                ${r.indexed ? "" : `<span class="gws-item-badge">${t("(생성 중)", "(Generating)")}</span>`}
               </li>`;
           })
           .join("");

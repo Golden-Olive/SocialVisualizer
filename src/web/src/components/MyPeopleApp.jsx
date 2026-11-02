@@ -28,7 +28,8 @@ function MyPeopleApp() {
   // 캔버스(.mp-detail-canvas)로 두고 그 전체를 통째로 transform:scale()해서
   // 배치·비율이 창 크기와 무관하게 항상 완전히 동일하게 유지되도록 한다.
   const detailCanvasRef = useRef(null);
-  useScaleToFit(detailCanvasRef, "top center");
+  // 사이드바를 접어 패널이 가로로 넓어지면 좌우에 빈 여백이 생기지 않게 캔버스 너비를 늘린다(fillWidth).
+  useScaleToFit(detailCanvasRef, "top center", 768, true);
 
   // 상세보기 캔버스와 같은 이유로, 패널 위쪽 제목/버튼 줄(.mp-panel-header)도
   // clamp() 기반 개별 축소 대신 고정 캔버스+scale로 통일해서, 상세보기 패널이
@@ -65,28 +66,28 @@ function MyPeopleApp() {
               <div className="mp-header-controls">
                 <button className="mp-brand-filter-btn" id="mp-brand-filter-btn" type="button">
                   <i className="bi bi-megaphone"></i>
-                  <span id="mp-brand-filter-label">광고 제거</span>
+                  <span id="mp-brand-filter-label">Hide ads</span>
                 </button>
                 <div className="mp-dropdown" id="mp-dropdown">
                   <div className="mp-dropdown-btn" id="mp-dropdown-btn">
-                    <span id="mp-dropdown-label">친밀도</span>
+                    <span id="mp-dropdown-label">Affinity</span>
                     <i className="bi bi-chevron-down mp-dropdown-chevron"></i>
                   </div>
                   <div className="mp-dropdown-menu" id="mp-dropdown-menu">
                     <div className="mp-dropdown-item selected" data-sort="affinity">
-                      친밀도
+                      Affinity
                     </div>
                     <div className="mp-dropdown-item" data-sort="name">
-                      이름
+                      Name
                     </div>
                     <div className="mp-dropdown-item" data-sort="total">
-                      송수신 횟수
+                      Total mails
                     </div>
                     <div className="mp-dropdown-item" data-sort="received">
-                      받은 메일수
+                      Received
                     </div>
                     <div className="mp-dropdown-item" data-sort="sent">
-                      보낸 메일수
+                      Sent
                     </div>
                   </div>
                 </div>
@@ -102,7 +103,7 @@ function MyPeopleApp() {
                 <div className="mp-graph-panel" id="mp-graph-panel">
                   <div className="mp-graph-panel-header">
                     <div className="mp-graph-panel-title">
-                      <i className="bi bi-diagram-3"></i> 지식 그래프
+                      <i className="bi bi-diagram-3"></i> Knowledge graph
                     </div>
                     <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
                       <button
@@ -110,10 +111,10 @@ function MyPeopleApp() {
                         className="mp-graph-close"
                         style={{ background: "rgba(38, 185, 154, 0.12)", color: "#1a9e7f" }}
                       >
-                        <i className="bi bi-fullscreen"></i> 전체보기
+                        <i className="bi bi-fullscreen"></i> Fit view
                       </button>
                       <button className="mp-graph-close" onClick={() => toggleGraphView()}>
-                        <i className="bi bi-arrow-left"></i> 카드 보기
+                        <i className="bi bi-arrow-left"></i> Card view
                       </button>
                     </div>
                   </div>
@@ -148,7 +149,7 @@ function MyPeopleApp() {
                 <div className="mp-grid" id="mp-grid">
                   <div className="mp-empty">
                     <i className="bi bi-people"></i>
-                    <p>데이터를 불러오는 중...</p>
+                    <p>Loading data...</p>
                   </div>
                 </div>
               </div>
@@ -156,7 +157,7 @@ function MyPeopleApp() {
               <div className="mp-panel" id="mp-messenger-view" style={{ display: "none" }}>
                 <div className="mp-empty" id="mp-messenger-loading">
                   <i className="bi bi-chat-dots"></i>
-                  <p>메신저 기능을 불러오는 중...</p>
+                  <p>Loading messenger...</p>
                 </div>
               </div>
 
@@ -264,34 +265,34 @@ function MyPeopleApp() {
                       id="mp-tab-stats"
                       onClick={() => switchDetailTab("stats")}
                     >
-                      메일 통계
+                      Mail stats
                     </button>
                     <button
                       className="mp-detail-tab-btn"
                       id="mp-tab-desc"
                       onClick={() => switchDetailTab("desc")}
                     >
-                      설명
+                      Description
                     </button>
                     <button
                       className="mp-detail-tab-btn"
                       id="mp-tab-kw"
                       onClick={() => switchDetailTab("kw")}
                     >
-                      키워드
+                      Keywords
                     </button>
                   </div>
                 </div>
 
                 <div className="mp-detail-desc" id="mp-detail-desc">
                   <div id="mp-desc-profile-content">
-                    <p className="mp-desc-profile-empty">로딩 중...</p>
+                    <p className="mp-desc-profile-empty">Loading...</p>
                   </div>
                 </div>
 
                 <div className="mp-detail-kw" id="mp-detail-kw">
                   <div className="mp-wc-wrap" id="mp-detail-wc">
-                    <span style={{ color: "#a0b8b0", fontSize: "1rem" }}>로딩 중...</span>
+                    <span style={{ color: "#a0b8b0", fontSize: "1rem" }}>Loading...</span>
                   </div>
                 </div>
 
@@ -338,18 +339,20 @@ function MyPeopleApp() {
                                 letterSpacing: "-0.01em",
                                 textTransform: "none",
                                 color: "#1c1c1e",
+                                position: "relative",
+                                top: "3px",
                               }}
                             >
-                              메일 통계
+                              Mail stats
                             </div>
                             <span
                               id="mp-stats-total"
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "0.85rem",
                                 fontWeight: 700,
                                 color: "#6b6459",
                                 background: "rgba(28, 28, 30, 0.06)",
-                                padding: "4px 12px",
+                                padding: "3px 10px",
                                 borderRadius: "20px",
                                 whiteSpace: "nowrap",
                               }}
@@ -366,7 +369,7 @@ function MyPeopleApp() {
                           ></div>
                         </div>
                         {/* Y축이 뭘 나타내는지 표시(My Time 일별 키워드 그래프와 같은 방식) */}
-                        <div className="mp-vchart-y-title">건수</div>
+                        <div className="mp-vchart-y-title">Count</div>
                         <div className="mp-vchart-wrap">
                           <div className="mp-vchart-y" id="mp-vchart-y">
                             <span>—</span>
@@ -374,7 +377,7 @@ function MyPeopleApp() {
                             <span>0</span>
                           </div>
                           <div className="mp-vchart-area" id="mp-chart">
-                            <span style={{ color: "#a0b8b0", fontSize: "1rem" }}>로딩 중...</span>
+                            <span style={{ color: "#a0b8b0", fontSize: "1rem" }}>Loading...</span>
                           </div>
                         </div>
                       </div>

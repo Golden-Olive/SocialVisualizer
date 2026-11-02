@@ -3,6 +3,8 @@
 
 Entry point for the "My People" page (mypeople.html) — mounts MyPeopleApp (React). Card sorting, the detail panel, the mini knowledge graph, and the timeline slider are all handled by MyPeopleApp.jsx and features/mypeopleEngine.js.
  */
+// 영어 데모 — 다른 import보다 먼저 fetch를 가로채야 하므로 맨 위에 둔다.
+import "../demo/demoFetch.js";
 import "../scss/components/_sidebar.scss";
 import "../scss/pages/mypeople.scss";
 

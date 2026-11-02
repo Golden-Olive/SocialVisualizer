@@ -702,7 +702,7 @@ footer {
   border: none;
   background: #fff;
   color: #5a3a1a;
-  font-size: clamp(0.68rem, 1.3cqw, 0.78rem);
+  font-size: clamp(0.74rem, 1.5cqw, 0.88rem);
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -1034,6 +1034,23 @@ footer {
 .mp-detail-relation-label:empty {
   display: none;
 }
+// 영어 라벨("Relationship: Friend")은 한글("관계: 친구")보다 길어서, 메일 상세에서는 두 아바타 사이 칸을
+// 넓혀 라벨이 아바타를 덮지 않게 하고, 헤더 줄을 살짝 왼쪽으로 옮겨(오른쪽 padding 80→140px)
+// 오른쪽 아래 탭 버튼(.mp-detail-tab-group)이 상대방 이메일을 가리지 않게 한다.
+.mp-detail:not(.mp-detail-messenger) {
+  .mp-detail-relation {
+    width: 150px;
+  }
+  .mp-detail-header {
+    padding-right: 140px;
+  }
+  .mp-detail-relation-label {
+    font-size: clamp(0.8rem, 1.9cqw, 1rem);
+  }
+  .mp-detail-affinity-label {
+    font-size: clamp(0.7rem, 1.7cqw, 0.88rem);
+  }
+}
 // 링(핑크 원형 게이지)을 없앤 대신, 친밀도 등급(아주 친밀한 관계 등)을 선 밑에 순수 텍스트로 표시.
 // 위쪽 .mp-detail-relation-label(관계: 기업)과 같은 기준(가운데 정렬)으로 맞춤.
 .mp-detail-affinity-label {
@@ -1279,11 +1296,12 @@ footer {
 // 비활성 탭은 옅은 회색 배경 + 회색 글씨로 구분.
 .mp-detail-tab-btn {
   box-sizing: border-box;
-  padding: clamp(5px, 0.5cqw, 7px) clamp(12px, 1.4cqw, 18px);
+  // 영어 탭 이름(Mail stats/Description/Keywords)이 한글보다 길어 상대방 이메일을 가려서 크기를 줄임
+  padding: clamp(4px, 0.4cqw, 5px) clamp(9px, 1cqw, 13px);
   border-radius: 20px;
   border: 1px solid rgba(28, 28, 30, 0.12);
   cursor: pointer;
-  font-size: clamp(0.78rem, 1.6cqw, 1rem);
+  font-size: clamp(0.7rem, 1.3cqw, 0.85rem);
   font-weight: 700;
   color: #6e6e73;
   letter-spacing: 0.03em;
@@ -1703,7 +1721,7 @@ footer {
   justify-content: space-between;
 }
 .mp-email-tag {
-  font-size: clamp(0.66rem, 1.5cqw, 0.8rem);
+  font-size: clamp(0.7rem, 1.6cqw, 0.86rem);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1721,23 +1739,23 @@ footer {
   color: #2952a3;
 }
 .mp-email-date {
-  font-size: clamp(0.72rem, 1.6cqw, 0.86rem);
+  font-size: clamp(0.78rem, 1.7cqw, 0.94rem);
   color: #8a8073;
 }
 .mp-email-subject {
-  font-size: clamp(0.92rem, 2cqw, 1.12rem);
+  font-size: clamp(1rem, 2.2cqw, 1.22rem);
   font-weight: 700;
   color: #1c1c1e;
   line-height: 1.4;
 }
 .mp-email-from {
-  font-size: clamp(0.7rem, 1.5cqw, 0.82rem);
+  font-size: clamp(0.76rem, 1.6cqw, 0.9rem);
   color: #a39a8d;
 }
 /* 하루 상세(openMailDayChat)에서 보여주는 메일 원문 본문 — 메신저의 .mp-chatline-text와
    같은 방식으로 줄바꿈을 그대로 살려서 실제 메일처럼 읽히게 함 */
 .mp-email-body {
-  font-size: clamp(0.78rem, 1.7cqw, 0.92rem);
+  font-size: clamp(0.86rem, 1.9cqw, 1.02rem);
   color: #2c2c2e;
   line-height: 1.6;
   white-space: pre-wrap;

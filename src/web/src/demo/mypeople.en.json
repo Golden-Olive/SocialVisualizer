@@ -1,0 +1,6031 @@
+{
+ "me": {
+  "email": "03yeah03@gmail.com",
+  "avatar": "/images/avatar/d5a841b364d2d4acb2edc7bcfcb29cd4.png"
+ },
+ "dateRange": {
+  "first_date": "2017-01-04",
+  "last_date": "2026-08-25"
+ },
+ "people": [
+  {
+   "email": "sunny10@gmail.com",
+   "name": "Minju Kim",
+   "avatar": "/images/avatar/0c892936f612a86a0bb2b9f8ddb8ae2a.png",
+   "relation": "Family",
+   "description": "A family member I keep in close touch with.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-05-13 12:20:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.82
+  },
+  {
+   "email": "moonlight17@naver.com",
+   "name": "Seoyeon Lee",
+   "avatar": "/images/avatar/1906e30eada27b664ff6262f19a941c1.png",
+   "relation": "Friend",
+   "description": "Relationship: Friend\nAbout: A classmate from the Intro to Web Programming course; we did a team project together\nMain topics: Assignments, class content, team project progress",
+   "mails": [
+    {
+     "date": "2024-02-01 09:00:00",
+     "direction": "sent",
+     "subject": "Got your class notes summary",
+     "body": "I checked the class notes summary you sent, it's really thorough. Thank you!"
+    },
+    {
+     "date": "2024-02-04 14:23:00",
+     "direction": "received",
+     "subject": "Is your assignment submitted?",
+     "body": "How far along are you on the assignment we talked about? I'm almost done, so let me know how it's going for you."
+    },
+    {
+     "date": "2024-02-07 19:46:00",
+     "direction": "sent",
+     "subject": "I'll send my lecture PDF notes too",
+     "body": "I finished organizing the lecture PDF too, I'll send the file in a bit. Can you check if it looks right?"
+    },
+    {
+     "date": "2024-04-01 09:00:00",
+     "direction": "sent",
+     "subject": "Question about the web programming lab",
+     "body": "I got stuck on part of the web programming lab. Could you take a look when you have time?"
+    },
+    {
+     "date": "2024-04-04 14:23:00",
+     "direction": "received",
+     "subject": "Sending the shared lecture notes",
+     "body": "Here are the lecture notes from today's class. Let me know if I missed anything!"
+    },
+    {
+     "date": "2024-04-07 19:46:00",
+     "direction": "sent",
+     "subject": "Let's do the attendance check together",
+     "body": "Instead of splitting up the attendance check, I think it's better if we just do it together. What do you think?"
+    },
+    {
+     "date": "2024-04-10 13:09:00",
+     "direction": "received",
+     "subject": "When should we go over the exam scope this week?",
+     "body": "Let's find a time to go over the exam scope this week. I'm free Tuesday afternoon or Thursday morning."
+    },
+    {
+     "date": "2024-04-13 18:32:00",
+     "direction": "sent",
+     "subject": "Progress update on the assignment deadline",
+     "body": "Here's what I've done so far for the assignment due date. I think we're heading in the right direction."
+    },
+    {
+     "date": "2024-06-01 09:00:00",
+     "direction": "sent",
+     "subject": "Can we finish the class notes today?",
+     "body": "I need to finish the class notes today. If you have time, want to look at them together for a bit?"
+    },
+    {
+     "date": "2024-06-04 14:23:00",
+     "direction": "received",
+     "subject": "Did you miss anything in the lab assignment PDF?",
+     "body": "Class was a bit hectic today. Let me know if you missed anything about the lab assignment PDF, I'll double-check too."
+    },
+    {
+     "date": "2024-08-01 09:00:00",
+     "direction": "sent",
+     "subject": "You saved me with the group meeting schedule",
+     "body": "Thanks to the group meeting schedule you sent, I finished way more easily. Thank you so much!"
+    },
+    {
+     "date": "2024-08-04 14:23:00",
+     "direction": "received",
+     "subject": "The code review deadline is coming up",
+     "body": "The code review is due this week, so I think we should hurry. How's it going?"
+    },
+    {
+     "date": "2024-08-07 19:46:00",
+     "direction": "sent",
+     "subject": "About the team meeting",
+     "body": "If there's anything you don't get about the team meeting part, feel free to ask me. I asked the professor separately earlier."
+    },
+    {
+     "date": "2024-08-10 13:09:00",
+     "direction": "received",
+     "subject": "Want to go over the class notes together?",
+     "body": "Summarizing this class on my own is a bit much. Could you go over it with me if you have time?"
+    },
+    {
+     "date": "2024-10-01 09:00:00",
+     "direction": "sent",
+     "subject": "Got your assignment submission",
+     "body": "I checked the assignment you submitted, it's really well organized. Thank you!"
+    },
+    {
+     "date": "2024-10-04 14:23:00",
+     "direction": "received",
+     "subject": "Please check the lecture PDF",
+     "body": "Could you check the lecture PDF I put together? Just tell me if anything looks weird."
+    },
+    {
+     "date": "2024-10-07 19:46:00",
+     "direction": "sent",
+     "subject": "I'll send my web programming lab notes too",
+     "body": "I finished my web programming lab notes too, I'll send the file in a bit. Can you check if it looks right?"
+    },
+    {
+     "date": "2024-10-10 13:09:00",
+     "direction": "received",
+     "subject": "How were today's shared lecture notes?",
+     "body": "Weren't today's lecture notes really hard? I think I understood about half. How about you?"
+    },
+    {
+     "date": "2024-10-13 18:32:00",
+     "direction": "sent",
+     "subject": "Question about the attendance check",
+     "body": "I got stuck on part of the attendance check. Could you take a look when you have time?"
+    },
+    {
+     "date": "2024-10-16 12:55:00",
+     "direction": "received",
+     "subject": "Done with the exam scope?",
+     "body": "How far did you get on the exam scope we talked about? I'm almost done, so let me know how it's going for you."
+    },
+    {
+     "date": "2024-12-01 09:00:00",
+     "direction": "sent",
+     "subject": "Let's work on the assignment deadline together",
+     "body": "Instead of splitting up the work before the deadline, I think it's better if we just do it together. What do you think?"
+    },
+    {
+     "date": "2024-12-04 14:23:00",
+     "direction": "received",
+     "subject": "Sending the class notes",
+     "body": "Here are the notes from today's class. Let me know if I missed anything!"
+    },
+    {
+     "date": "2024-12-07 19:46:00",
+     "direction": "sent",
+     "subject": "Progress update on the lab assignment PDF",
+     "body": "Here's what I've done so far on the lab assignment PDF. I think we're heading in the right direction."
+    },
+    {
+     "date": "2025-02-01 09:00:00",
+     "direction": "sent",
+     "subject": "Got the team meeting notes",
+     "body": "I checked the team meeting notes you sent, they're well organized. I think we can go ahead as is."
+    },
+    {
+     "date": "2025-02-04 14:23:00",
+     "direction": "received",
+     "subject": "Let's talk about the presentation slides",
+     "body": "I think we need to wrap up the presentation slides by this week. When are you free?"
+    },
+    {
+     "date": "2025-02-07 19:46:00",
+     "direction": "sent",
+     "subject": "I'll take the project proposal",
+     "body": "I'll take care of the project proposal and share it as I make progress."
+    },
+    {
+     "date": "2025-02-10 13:09:00",
+     "direction": "received",
+     "subject": "Sending the meeting minutes draft",
+     "body": "I made a draft of the meeting minutes. Take a look and give me your thoughts."
+    },
+    {
+     "date": "2025-02-13 18:32:00",
+     "direction": "sent",
+     "subject": "Thoughts on the GitHub repository",
+     "body": "Looking at the GitHub repository, I think it'd be better to change this part like this. What do you think?"
+    },
+    {
+     "date": "2025-03-01 09:00:00",
+     "direction": "sent",
+     "subject": "Rescheduling the API integration meeting",
+     "body": "I think we need to reschedule the API integration meeting. When works for you this week?"
+    },
+    {
+     "date": "2025-03-04 14:23:00",
+     "direction": "received",
+     "subject": "How's everyone doing on the bug fixes?",
+     "body": "Just curious how the team is doing on bug fixes. How far along are you?"
+    },
+    {
+     "date": "2025-05-01 09:00:00",
+     "direction": "sent",
+     "subject": "Finished the UI design",
+     "body": "I wrapped up the UI design. I'll submit it if the final version looks okay to you."
+    },
+    {
+     "date": "2025-05-04 14:23:00",
+     "direction": "received",
+     "subject": "Let's sort out the final report at today's meeting",
+     "body": "Let's make sure we sort out the final report at today's meeting. Bring any ideas you've got."
+    },
+    {
+     "date": "2025-05-07 19:46:00",
+     "direction": "sent",
+     "subject": "Please double-check the presentation PPT",
+     "body": "Could you check the parts I changed in the presentation PPT one more time? I'm worried I missed something."
+    },
+    {
+     "date": "2025-05-10 13:09:00",
+     "direction": "received",
+     "subject": "Urgent: please check the code convention",
+     "body": "There's something urgent I need to check about the code convention. Do you have time now?"
+    },
+    {
+     "date": "2025-05-13 18:32:00",
+     "direction": "sent",
+     "subject": "Great work on the team meeting",
+     "body": "You worked so hard preparing for this team meeting. Thanks to you, I think it went really well."
+    },
+    {
+     "date": "2025-05-16 12:55:00",
+     "direction": "received",
+     "subject": "I revised the presentation slides",
+     "body": "I revised the part of the presentation slides we talked about. I'll go ahead if it looks fine to you."
+    },
+    {
+     "date": "2025-05-19 17:18:00",
+     "direction": "sent",
+     "subject": "Let's talk about next steps for the project proposal",
+     "body": "Now that the project proposal is done, let's discuss next steps at the next meeting."
+    },
+    {
+     "date": "2025-07-01 09:00:00",
+     "direction": "sent",
+     "subject": "Got the meeting minutes",
+     "body": "I checked the meeting minutes you sent, they're well organized. I think we can go ahead as is."
+    },
+    {
+     "date": "2025-07-04 14:23:00",
+     "direction": "received",
+     "subject": "Let's rehearse the GitHub repository walkthrough",
+     "body": "I think we should run through the GitHub repository once before the presentation. Any day you're free this week?"
+    },
+    {
+     "date": "2025-07-07 19:46:00",
+     "direction": "sent",
+     "subject": "I'll take the API integration",
+     "body": "I'll take care of the API integration and share it as I make progress."
+    },
+    {
+     "date": "2025-09-01 09:00:00",
+     "direction": "sent",
+     "subject": "Thoughts on the bug fixes",
+     "body": "Looking at the bug fixes, I think it'd be better to change this part like this. What do you think?"
+    },
+    {
+     "date": "2025-09-04 14:23:00",
+     "direction": "received",
+     "subject": "Attaching UI design materials",
+     "body": "I'm attaching the UI design materials. Take a look and I'll add more if needed."
+    },
+    {
+     "date": "2025-09-07 19:46:00",
+     "direction": "sent",
+     "subject": "Rescheduling the final report meeting",
+     "body": "I think we need to reschedule the final report meeting. When works for you this week?"
+    },
+    {
+     "date": "2025-09-10 13:09:00",
+     "direction": "received",
+     "subject": "Let's talk about the presentation PPT",
+     "body": "I think we need to wrap up the presentation PPT by this week. When are you free?"
+    },
+    {
+     "date": "2025-11-01 09:00:00",
+     "direction": "sent",
+     "subject": "Finished the code convention",
+     "body": "I wrapped up the code convention. I'll submit it if the final version looks okay to you."
+    },
+    {
+     "date": "2025-11-04 14:23:00",
+     "direction": "received",
+     "subject": "Sending the team meeting draft",
+     "body": "I made a draft for the team meeting. Take a look and give me your thoughts."
+    },
+    {
+     "date": "2025-11-07 19:46:00",
+     "direction": "sent",
+     "subject": "Please double-check the presentation slides",
+     "body": "Could you check the parts I changed in the presentation slides one more time? I'm worried I missed something."
+    },
+    {
+     "date": "2025-11-10 13:09:00",
+     "direction": "received",
+     "subject": "How's everyone doing on the project proposal?",
+     "body": "Just curious how the team is doing on the project proposal. How far along are you?"
+    },
+    {
+     "date": "2025-11-13 18:32:00",
+     "direction": "sent",
+     "subject": "Great work on the meeting minutes",
+     "body": "You worked so hard on the meeting minutes. Thanks to you, I think it went really well."
+    },
+    {
+     "date": "2025-11-16 12:55:00",
+     "direction": "received",
+     "subject": "Let's sort out the GitHub repository at today's meeting",
+     "body": "Let's make sure we sort out the GitHub repository at today's meeting. Bring any ideas you've got."
+    },
+    {
+     "date": "2025-11-19 17:18:00",
+     "direction": "sent",
+     "subject": "Let's talk about next steps for the API integration",
+     "body": "Now that the API integration is done, let's discuss next steps at the next meeting."
+    },
+    {
+     "date": "2025-11-22 11:41:00",
+     "direction": "received",
+     "subject": "Urgent: please check the bug fixes",
+     "body": "There's something urgent I need to check about the bug fixes. Do you have time now?"
+    },
+    {
+     "date": "2026-01-01 09:00:00",
+     "direction": "sent",
+     "subject": "Got the UI design",
+     "body": "I checked the UI design you sent, it's well organized. I think we can go ahead as is."
+    },
+    {
+     "date": "2026-01-04 14:23:00",
+     "direction": "received",
+     "subject": "I revised the final report",
+     "body": "I revised the part of the final report we talked about. I'll go ahead if it looks fine to you."
+    },
+    {
+     "date": "2026-03-01 09:00:00",
+     "direction": "sent",
+     "subject": "I'll take the presentation PPT",
+     "body": "I'll take care of the presentation PPT and share it as I make progress."
+    },
+    {
+     "date": "2026-03-04 14:23:00",
+     "direction": "received",
+     "subject": "Let's rehearse the code convention before presenting",
+     "body": "I think we should go over the code convention once before the presentation. Any day you're free this week?"
+    },
+    {
+     "date": "2026-03-07 19:46:00",
+     "direction": "sent",
+     "subject": "Thoughts on the team meeting",
+     "body": "Looking at the team meeting notes, I think it'd be better to change this part like this. What do you think?"
+    },
+    {
+     "date": "2026-03-10 13:09:00",
+     "direction": "received",
+     "subject": "Attaching presentation slide materials",
+     "body": "I'm attaching the materials for the presentation slides. Take a look and I'll add more if needed."
+    },
+    {
+     "date": "2026-03-13 18:32:00",
+     "direction": "sent",
+     "subject": "Rescheduling the project proposal meeting",
+     "body": "I think we need to reschedule the project proposal meeting. When works for you this week?"
+    },
+    {
+     "date": "2026-05-01 09:00:00",
+     "direction": "sent",
+     "subject": "Finished the meeting minutes",
+     "body": "I wrapped up the meeting minutes. I'll submit them if the final version looks okay to you."
+    },
+    {
+     "date": "2026-05-04 14:23:00",
+     "direction": "received",
+     "subject": "Let's talk about the GitHub repository",
+     "body": "I think we need to wrap up the GitHub repository by this week. When are you free?"
+    },
+    {
+     "date": "2026-05-07 19:46:00",
+     "direction": "sent",
+     "subject": "Please double-check the API integration",
+     "body": "Could you check the parts I changed in the API integration one more time? I'm worried I missed something."
+    },
+    {
+     "date": "2026-07-01 09:00:00",
+     "direction": "sent",
+     "subject": "Great work on the bug fixes",
+     "body": "You worked so hard on these bug fixes. Thanks to you, I think it went really well."
+    },
+    {
+     "date": "2026-07-04 14:23:00",
+     "direction": "received",
+     "subject": "Sending the UI design draft",
+     "body": "I made a draft of the UI design. Take a look and give me your thoughts."
+    },
+    {
+     "date": "2026-07-07 19:46:00",
+     "direction": "sent",
+     "subject": "Let's talk about next steps for the final report",
+     "body": "Now that the final report is done, let's discuss next steps at the next meeting."
+    },
+    {
+     "date": "2026-07-10 13:09:00",
+     "direction": "received",
+     "subject": "How's everyone doing on the presentation PPT?",
+     "body": "Just curious how the team is doing on the presentation PPT. How far along are you?"
+    },
+    {
+     "date": "2026-07-13 18:32:00",
+     "direction": "sent",
+     "subject": "Got the code convention",
+     "body": "I checked the code convention you sent, it's well organized. I think we can go ahead as is."
+    },
+    {
+     "date": "2026-07-16 12:55:00",
+     "direction": "received",
+     "subject": "Let's sort out the team meeting at today's meeting",
+     "body": "Let's make sure we sort out the team meeting items today. Bring any ideas you've got."
+    },
+    {
+     "date": "2026-08-01 09:00:00",
+     "direction": "sent",
+     "subject": "I'll take the presentation slides",
+     "body": "I'll take care of the presentation slides and share it as I make progress."
+    },
+    {
+     "date": "2026-08-04 14:23:00",
+     "direction": "sent",
+     "subject": "Thoughts on the project proposal",
+     "body": "Looking at the project proposal, I think it'd be better to change this part like this. What do you think?"
+    },
+    {
+     "date": "2026-08-23 17:59:00",
+     "direction": "received",
+     "subject": "[Semicolon Club] Sending the settlement documents",
+     "body": "Hi! I put together the settlement documents for our team project that we talked about last time.\nI collected all the receipts for the presentation printing and server hosting costs and organized them in a spreadsheet. I split everything four ways, so take a look and let me know if anything looks off!\nWe have to submit it to the TA by early next week, so we need to hurry a bit. Please check the attached settlement documents just once. Thank you so much!"
+    }
+   ],
+   "keywords": [
+    {
+     "word": "Assignment submission",
+     "date": "2024-02-01"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-02-04"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-02-07"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-04-01"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-04-04"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-04-07"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-04-10"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-04-13"
+    },
+    {
+     "word": "Assignment submission",
+     "date": "2024-06-01"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-06-04"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-08-01"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-08-04"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-08-07"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-08-10"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-10-01"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-10-04"
+    },
+    {
+     "word": "Lecture PDF",
+     "date": "2024-10-07"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-10-10"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-10-13"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-10-16"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-12-01"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-12-04"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-12-07"
+    },
+    {
+     "word": "Class notes summary",
+     "date": "2024-02-01"
+    },
+    {
+     "word": "Assignment deadline",
+     "date": "2024-02-04"
+    },
+    {
+     "word": "Assignment deadline",
+     "date": "2024-02-07"
+    },
+    {
+     "word": "Assignment deadline",
+     "date": "2024-04-01"
+    },
+    {
+     "word": "Assignment deadline",
+     "date": "2024-04-04"
+    },
+    {
+     "word": "Assignment deadline",
+     "date": "2024-04-07"
+    },
+    {
+     "word": "Assignment deadline",
+     "date": "2024-04-10"
+    },
+    {
+     "word": "Web programming lab",
+     "date": "2024-04-13"
+    },
+    {
+     "word": "Web programming lab",
+     "date": "2024-06-01"
+    },
+    {
+     "word": "Web programming lab",
+     "date": "2024-06-04"
+    },
+    {
+     "word": "Web programming lab",
+     "date": "2024-08-01"
+    },
+    {
+     "word": "Web programming lab",
+     "date": "2024-08-04"
+    },
+    {
+     "word": "Web programming lab",
+     "date": "2024-08-07"
+    },
+    {
+     "word": "Class notes",
+     "date": "2024-08-10"
+    },
+    {
+     "word": "Class notes",
+     "date": "2024-10-01"
+    },
+    {
+     "word": "Class notes",
+     "date": "2024-10-04"
+    },
+    {
+     "word": "Class notes",
+     "date": "2024-10-07"
+    },
+    {
+     "word": "Class notes",
+     "date": "2024-10-10"
+    },
+    {
+     "word": "Shared lecture notes",
+     "date": "2024-10-13"
+    },
+    {
+     "word": "Shared lecture notes",
+     "date": "2024-10-16"
+    },
+    {
+     "word": "Shared lecture notes",
+     "date": "2024-12-01"
+    },
+    {
+     "word": "Shared lecture notes",
+     "date": "2024-12-04"
+    },
+    {
+     "word": "Lab assignment PDF",
+     "date": "2024-12-07"
+    },
+    {
+     "word": "Lab assignment PDF",
+     "date": "2024-02-01"
+    },
+    {
+     "word": "Lab assignment PDF",
+     "date": "2024-02-04"
+    },
+    {
+     "word": "Lab assignment PDF",
+     "date": "2024-02-07"
+    },
+    {
+     "word": "Exam scope",
+     "date": "2024-04-01"
+    },
+    {
+     "word": "Exam scope",
+     "date": "2024-04-04"
+    },
+    {
+     "word": "Exam scope",
+     "date": "2024-04-07"
+    },
+    {
+     "word": "Group meeting schedule",
+     "date": "2024-04-10"
+    },
+    {
+     "word": "Group meeting schedule",
+     "date": "2024-04-13"
+    },
+    {
+     "word": "Group meeting schedule",
+     "date": "2024-06-01"
+    },
+    {
+     "word": "Attendance check",
+     "date": "2024-06-04"
+    },
+    {
+     "word": "Attendance check",
+     "date": "2024-08-01"
+    },
+    {
+     "word": "Code review",
+     "date": "2024-08-04"
+    },
+    {
+     "word": "Code review",
+     "date": "2024-08-07"
+    },
+    {
+     "word": "Team meeting",
+     "date": "2024-08-10"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-02-01"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-02-04"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-02-07"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-02-10"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-02-13"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-03-01"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-03-04"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-05-01"
+    },
+    {
+     "word": "Presentation slides",
+     "date": "2025-05-04"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-05-07"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-05-10"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-05-13"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-05-16"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-05-19"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-07-01"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-07-04"
+    },
+    {
+     "word": "Project proposal",
+     "date": "2025-07-07"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-09-01"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-09-04"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-09-07"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-09-10"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-11-01"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-11-04"
+    },
+    {
+     "word": "Meeting minutes",
+     "date": "2025-11-07"
+    },
+    {
+     "word": "API integration",
+     "date": "2025-11-10"
+    },
+    {
+     "word": "API integration",
+     "date": "2025-11-13"
+    },
+    {
+     "word": "API integration",
+     "date": "2025-11-16"
+    },
+    {
+     "word": "API integration",
+     "date": "2025-11-19"
+    },
+    {
+     "word": "API integration",
+     "date": "2025-11-22"
+    },
+    {
+     "word": "API integration",
+     "date": "2026-01-01"
+    },
+    {
+     "word": "Bug fixes",
+     "date": "2026-01-04"
+    },
+    {
+     "word": "Bug fixes",
+     "date": "2026-03-01"
+    },
+    {
+     "word": "Bug fixes",
+     "date": "2026-03-04"
+    },
+    {
+     "word": "Bug fixes",
+     "date": "2026-03-07"
+    },
+    {
+     "word": "Bug fixes",
+     "date": "2026-03-10"
+    },
+    {
+     "word": "Bug fixes",
+     "date": "2026-03-13"
+    },
+    {
+     "word": "GitHub repository",
+     "date": "2026-05-01"
+    },
+    {
+     "word": "GitHub repository",
+     "date": "2026-05-04"
+    },
+    {
+     "word": "GitHub repository",
+     "date": "2026-05-07"
+    },
+    {
+     "word": "GitHub repository",
+     "date": "2026-07-01"
+    },
+    {
+     "word": "GitHub repository",
+     "date": "2026-07-04"
+    },
+    {
+     "word": "UI design",
+     "date": "2026-07-07"
+    },
+    {
+     "word": "UI design",
+     "date": "2026-07-10"
+    },
+    {
+     "word": "UI design",
+     "date": "2026-07-13"
+    },
+    {
+     "word": "UI design",
+     "date": "2026-07-16"
+    },
+    {
+     "word": "UI design",
+     "date": "2026-08-01"
+    },
+    {
+     "word": "Final report",
+     "date": "2026-08-04"
+    },
+    {
+     "word": "Final report",
+     "date": "2025-02-01"
+    },
+    {
+     "word": "Final report",
+     "date": "2025-02-04"
+    },
+    {
+     "word": "Final report",
+     "date": "2025-02-07"
+    },
+    {
+     "word": "Presentation PPT",
+     "date": "2025-02-10"
+    },
+    {
+     "word": "Presentation PPT",
+     "date": "2025-02-13"
+    },
+    {
+     "word": "Presentation PPT",
+     "date": "2025-03-01"
+    },
+    {
+     "word": "Team meeting",
+     "date": "2025-03-04"
+    },
+    {
+     "word": "Team meeting",
+     "date": "2025-05-01"
+    },
+    {
+     "word": "Team meeting",
+     "date": "2025-05-04"
+    },
+    {
+     "word": "Code convention",
+     "date": "2025-05-07"
+    },
+    {
+     "word": "Code convention",
+     "date": "2025-05-10"
+    },
+    {
+     "word": "Dinner cost settlement",
+     "date": "2025-05-13"
+    },
+    {
+     "word": "Settlement documents",
+     "date": "2026-08-23"
+    }
+   ],
+   "affinity": 0.76
+  },
+  {
+   "email": "blue24@daum.net",
+   "name": "Jiyeon Park",
+   "avatar": "/images/avatar/1a65913f07fcdcfa60c14c60b731b604.png",
+   "relation": "Family",
+   "description": "A family member I keep in close touch with.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-09-22 18:28:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.76
+  },
+  {
+   "email": "haru31@kakao.com",
+   "name": "Sojeong Park",
+   "avatar": "/images/avatar/222f8e1efd037bb30e9676307f1dacde.png",
+   "relation": "Family",
+   "description": "A family member I keep in close touch with.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-02-13 15:53:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 20:10:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 11:27:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 16:44:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 21:01:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 12:18:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 17:35:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-09-22 08:52:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-10-04 13:09:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-11-13 18:26:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-12-22 09:43:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-08 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-09 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-10 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-11 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-12 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-13 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-14 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-15 03:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-16 01:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-16 23:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-18 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-19 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-20 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-21 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-22 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-23 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-24 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-25 03:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.94
+  },
+  {
+   "email": "yoon38@hanmail.net",
+   "name": "doheeya",
+   "avatar": "/images/avatar/2fc559ef33f96ade3e1b4a067af3ce2c.png",
+   "relation": "Family",
+   "description": "A family member I keep in close touch with.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-02-13 15:53:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 20:10:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.87
+  },
+  {
+   "email": "cotton45@nate.com",
+   "name": "Sejun Kang",
+   "avatar": "/images/avatar/36410ed68e8390b33b707b8d54a079a7.png",
+   "relation": "Family",
+   "description": "A family member I keep in close touch with.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-12-22 11:31:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2019-01-04 16:48:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2019-02-13 21:05:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2019-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-02-13 15:53:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-03-22 20:10:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 11:27:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 16:44:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 21:01:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 12:18:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 17:35:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.78
+  },
+  {
+   "email": "james.carter@outlook.com",
+   "name": "j.carter92",
+   "avatar": "/images/avatar/44d8dc2dfb929c26a486610daae26e6e.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 21:03:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.83
+  },
+  {
+   "email": "jelly59@naver.com",
+   "name": "Jimin Yoon",
+   "avatar": "/images/avatar/47924a6863b9526f4f305df370e7a4f7.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-09-22 18:28:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.79
+  },
+  {
+   "email": "milkyway66@daum.net",
+   "name": "Eunwoo Jang",
+   "avatar": "/images/avatar/5e6fdc02baab7b92dd194e60aa14eb8a.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.83
+  },
+  {
+   "email": "cloud973@kakao.com",
+   "name": "Yeeun Lim",
+   "avatar": "/images/avatar/61ed6b2a4f5c5b54ded59343a9845108.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.82
+  },
+  {
+   "email": "emily.chen@outlook.com",
+   "name": "emilychen_",
+   "avatar": "/images/avatar/6ca4105b44d746cfbe9c8317ab012c5e.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.8
+  },
+  {
+   "email": "greenlight80@hanmail.net",
+   "name": "Heewoo Han",
+   "avatar": "/images/avatar/75bd6be54b7b1e0f050b6b199361d808.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.79
+  },
+  {
+   "email": "dallae87@nate.com",
+   "name": "dahun.o",
+   "avatar": "/images/avatar/78ada5f67be3326a4be4f95927993cc4.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2018-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2018-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2019-12-22 15:55:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.81
+  },
+  {
+   "email": "dodam94@gmail.com",
+   "name": "Juhee Seo",
+   "avatar": "/images/avatar/7bdacc093805886bea6eb138c145aef3.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.87
+  },
+  {
+   "email": "hodu12@naver.com",
+   "name": "Seoyun Shin",
+   "avatar": "/images/avatar/7c055c0effc89888b2fa68dd7a54fd31.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.89
+  },
+  {
+   "email": "byulbit77@gmail.com",
+   "name": "Haram Yoon",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201109547.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.73
+  },
+  {
+   "email": "onda21@naver.com",
+   "name": "Eunchae Jo",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201116324.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.76
+  },
+  {
+   "email": "dodam58@daum.net",
+   "name": "Jiyu Choi",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201122581.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.77
+  },
+  {
+   "email": "haemi34@kakao.com",
+   "name": "Seoyul Lim",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201134301.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-02-13 15:53:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.88
+  },
+  {
+   "email": "yeondu09@gmail.com",
+   "name": "Taekyung Oh",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201200278.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.3
+  },
+  {
+   "email": "jjang14@daum.net",
+   "name": "Taeyun Jo",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200011207.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-02-13 15:53:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 20:10:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 11:27:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 16:44:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 21:01:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 12:18:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 17:35:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-09-22 08:52:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-10-04 13:09:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-11-13 18:26:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-12-22 09:43:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-01-04 14:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-02-13 19:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-03-22 10:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-05 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-06 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-07 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-08 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-09 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-10 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-11 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-12 03:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-13 01:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-13 23:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-15 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-16 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-17 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-18 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-19 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-20 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-21 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-22 03:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-23 01:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-23 23:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-25 17:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.99
+  },
+  {
+   "email": "nabi21@kakao.com",
+   "name": "Inseon Moon",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200014611.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-02-13 15:53:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 20:10:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 11:27:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 16:44:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 21:01:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 12:18:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 17:35:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-09-22 08:52:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-10-04 13:09:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-11-13 18:26:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-12-22 09:43:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-01-04 14:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-02-13 19:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-03-22 10:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2025-04-04 15:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-06 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-07 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-08 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-09 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-10 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-11 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-12 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-13 03:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-14 01:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-14 23:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-16 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-17 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-18 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-19 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-20 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-21 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-22 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-23 03:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-24 01:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-24 23:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.92
+  },
+  {
+   "email": "grace.lee@outlook.com",
+   "name": "gracelee92",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200018953.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-10-04 19:21:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-11-13 10:38:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2022-12-22 15:55:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-01-04 20:12:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2023-02-13 11:29:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-03-22 16:46:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-04-04 21:03:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-05-13 12:20:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-06-22 17:37:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-07-04 08:54:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-08-13 13:11:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-09-22 18:28:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-10-04 09:45:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-11-13 14:02:00",
+     "direction": "received"
+    },
+    {
+     "date": "2023-12-22 19:19:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-01-04 10:36:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-02-13 15:53:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 20:10:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 11:27:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 16:44:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 21:01:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 12:18:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 17:35:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-09-22 08:52:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-08 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-09 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-10 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-11 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-12 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-13 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-14 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-15 03:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-16 01:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-16 23:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-18 17:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-19 15:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-20 13:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-21 11:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-22 09:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-23 07:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-24 05:00:00",
+     "direction": "received"
+    },
+    {
+     "date": "2026-08-25 03:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.96
+  },
+  {
+   "email": "haemi28@hanmail.net",
+   "name": "Jinwoo Jang",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200920318.png",
+   "relation": "Best friend",
+   "description": "A close friend I've known for a long time.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-05-13 14:08:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-06-22 19:25:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-07-04 10:42:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-08-13 15:59:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-09-22 20:16:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-10-04 11:33:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-11-13 16:50:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-12-22 21:07:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-01-04 12:24:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 17:41:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 08:58:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 13:15:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 18:32:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 09:49:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 14:06:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-08-13 19:23:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-09-22 10:40:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-10-04 15:57:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-11-13 20:14:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-12-22 11:31:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-01-04 16:48:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-02-13 21:05:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-03-22 12:22:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-04-04 17:39:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-05-13 08:56:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-06-22 13:13:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-07-04 18:30:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-08-13 09:47:00",
+     "direction": "received"
+    },
+    {
+     "date": "2022-09-22 14:04:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.73
+  },
+  {
+   "email": "poby19@daum.net",
+   "name": "Doeun Kwon",
+   "avatar": "/images/avatar/7c1a215e5a67cdc5adf70b93d331f7df.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.38
+  },
+  {
+   "email": "onda33@hanmail.net",
+   "name": "Yujin Ahn",
+   "avatar": "/images/avatar/907d8d01276e79a4e4e0a139208f7e97.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.22
+  },
+  {
+   "email": "riverside47@gmail.com",
+   "name": "Seeun Jeon",
+   "avatar": "/images/avatar/9fee3c0329144b4d41172af062cb508d.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.41
+  },
+  {
+   "email": "coco61@daum.net",
+   "name": "Jiwon Kim",
+   "avatar": "/images/avatar/75bd6be54b7b1e0f050b6b199361d808.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.37
+  },
+  {
+   "email": "michael.park@outlook.com",
+   "name": "mpark0304",
+   "avatar": "/images/avatar/KakaoTalk_20260818_194325435.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-04-04 09:51:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.24
+  },
+  {
+   "email": "byul82@nate.com",
+   "name": "Jaehyun Choi",
+   "avatar": "/images/avatar/KakaoTalk_20260818_194331288.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.31
+  },
+  {
+   "email": "sarang89@gmail.com",
+   "name": "Seonghee Jung",
+   "avatar": "/images/avatar/KakaoTalk_20260818_194334623.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2020-03-22 18:34:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.23
+  },
+  {
+   "email": "dowon96@naver.com",
+   "name": "Hyuk Kang",
+   "avatar": "/images/avatar/KakaoTalk_20260818_195956948.png",
+   "relation": "Acquaintance",
+   "description": "Someone I exchange the occasional hello with.",
+   "mails": [
+    {
+     "date": "2021-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 14:08:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.5
+  },
+  {
+   "email": "yeondu35@nate.com",
+   "name": "Arin Lim",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200923187.png",
+   "relation": "Acquaintance",
+   "description": "Someone I exchange the occasional hello with.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-06-22 19:25:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-07-04 10:42:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-08-13 15:59:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.56
+  },
+  {
+   "email": "bomnal42@gmail.com",
+   "name": "Kyunga Han",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200925777.png",
+   "relation": "Acquaintance",
+   "description": "Someone I exchange the occasional hello with.",
+   "mails": [
+    {
+     "date": "2017-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2017-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2017-04-04 09:51:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.57
+  },
+  {
+   "email": "gaeul49@naver.com",
+   "name": "Miso Oh",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200948506.png",
+   "relation": "Acquaintance",
+   "description": "Someone I exchange the occasional hello with.",
+   "mails": [
+    {
+     "date": "2021-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 19:25:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-07-04 10:42:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.66
+  },
+  {
+   "email": "sup56@daum.net",
+   "name": "Seunghyun Seo",
+   "avatar": "/images/avatar/KakaoTalk_20260818_200950994.png",
+   "relation": "Acquaintance",
+   "description": "Someone I exchange the occasional hello with.",
+   "mails": [
+    {
+     "date": "2021-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-03-22 18:34:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.65
+  },
+  {
+   "email": "daniel.cho@outlook.com",
+   "name": "Daniel Cho",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201101433.png",
+   "relation": "Acquaintance",
+   "description": "Someone I exchange the occasional hello with.",
+   "mails": [
+    {
+     "date": "2021-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2021-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2021-06-22 19:25:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.54
+  },
+  {
+   "email": "haeul77@nate.com",
+   "name": "Mina Kim",
+   "avatar": "/images/avatar/KakaoTalk_20260818_201311699.png",
+   "relation": "Drifted apart",
+   "description": "We used to keep in touch, but it's been a while.",
+   "mails": [
+    {
+     "date": "2020-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2020-02-13 13:17:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.28
+  },
+  {
+   "email": "newsletter@musinsa.com",
+   "name": "MUSINSA",
+   "avatar": "/images/avatar/KakaoTalk_20260818_202011909.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.08
+  },
+  {
+   "email": "info@yes24.com",
+   "name": "YES24",
+   "avatar": "/images/avatar/KakaoTalk_20260818_202033673.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 19:25:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 10:42:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 15:59:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-09-22 20:16:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-10-04 11:33:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-11-13 16:50:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-12-22 21:07:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.05
+  },
+  {
+   "email": "noreply@coupang.com",
+   "name": "Coupang",
+   "avatar": "/images/avatar/KakaoTalk_20260818_202057056.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 19:25:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 10:42:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 15:59:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.17
+  },
+  {
+   "email": "marketing@oliveyoung.co.kr",
+   "name": "OLIVE YOUNG",
+   "avatar": "/images/avatar/KakaoTalk_20260818_202115913.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.16
+  },
+  {
+   "email": "office@microsoft.com",
+   "name": "Microsoft 365",
+   "avatar": "/images/avatar/brand-microsoft365.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 19:25:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.18
+  },
+  {
+   "email": "service@baemin.com",
+   "name": "Baemin",
+   "avatar": "/images/avatar/KakaoTalk_20260818_202151276.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 19:25:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.06
+  },
+  {
+   "email": "news@apple.com",
+   "name": "Apple",
+   "avatar": "/images/avatar/brand-apple.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.12
+  },
+  {
+   "email": "notice@naver.com",
+   "name": "NAVER",
+   "avatar": "/images/avatar/brand-naver.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.11
+  },
+  {
+   "email": "newsletter@toss.im",
+   "name": "Toss",
+   "avatar": "/images/avatar/brand-toss.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.16
+  },
+  {
+   "email": "info@daangn.com",
+   "name": "Karrot",
+   "avatar": "/images/avatar/brand-daangn.png",
+   "relation": "Brand",
+   "description": "A brand/service newsletter I'm subscribed to.",
+   "mails": [
+    {
+     "date": "2024-01-04 08:00:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-02-13 13:17:00",
+     "direction": "sent"
+    },
+    {
+     "date": "2024-03-22 18:34:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-04-04 09:51:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-05-13 14:08:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-06-22 19:25:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-07-04 10:42:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-08-13 15:59:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-09-22 20:16:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-10-04 11:33:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-11-13 16:50:00",
+     "direction": "received"
+    },
+    {
+     "date": "2024-12-22 21:07:00",
+     "direction": "received"
+    }
+   ],
+   "keywords": [],
+   "affinity": 0.17
+  }
+ ]
+}

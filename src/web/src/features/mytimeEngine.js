@@ -11,6 +11,10 @@ import { refreshSidebarList } from "../components/appSidebar.js";
 import { initGlobalFilter } from "../utils/filterSync.js";
 
 /* 공통 fetch 헬퍼 */
+// 영문 하드코딩용 월 이름
+const MONTH_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const MONTH_LONG = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const fmtMonthLong = (k) => `${MONTH_LONG[parseInt(k.slice(5), 10) - 1]} ${k.slice(0, 4)}`;
 // JSON POST 요청 공통 헬퍼
 async function postJSON(url, body) {
   const res = await fetch(url, {
@@ -41,7 +45,7 @@ function escHtml(s) {
 }
 // 주요 연락처 카드 hover 설명 — 상세 설명(description) 대신 short_bio(한줄 소개)만 보여준다.
 function formatContactTooltip(shortBio) {
-  return shortBio ? escHtml(shortBio) : "등록된 설명이 없습니다.";
+  return shortBio ? escHtml(shortBio) : "No description available.";
 }
 // anchorEl 위치를 기준으로 공용 툴팁을 표시(placement로 위/아래 결정)
 function showTooltip(anchorEl, html, placement = "top") {
@@ -142,7 +146,7 @@ function createTimeline(ids) {
 
       const lbl = document.createElement("div");
       lbl.className = "mt-node-label";
-      lbl.textContent = mode === "month" ? `${parseInt(k.slice(5), 10)}월` : `${k}년`;
+      lbl.textContent = mode === "month" ? MONTH_SHORT[parseInt(k.slice(5), 10) - 1] : k;
 
       col.appendChild(dot);
       col.appendChild(lbl);
@@ -177,10 +181,10 @@ function createTimeline(ids) {
       .forEach((c) => c.classList.toggle("active", c === col));
 
     document.getElementById(ids.panelPeriod).textContent =
-      mode === "month" ? `${key.slice(0, 4)}년 ${key.slice(5)}월` : `${key}년`;
+      mode === "month" ? fmtMonthLong(key) : key;
     if (ids.panelCount) {
       document.getElementById(ids.panelCount).innerHTML = d.count
-        ? `<strong>${d.count.toLocaleString()}</strong>건 &nbsp;·&nbsp; ${d.threads}개 대화`
+        ? `<strong>${d.count.toLocaleString()}</strong> emails &nbsp;·&nbsp; ${d.threads} threads`
         : "";
     }
     document.getElementById(ids.panelSummary).textContent = d.summary || "";
@@ -202,7 +206,7 @@ function createTimeline(ids) {
       });
     // 필터링 후 하나도 안 남으면(전부 이름 없는 연락처였던 경우) 빈 칸 대신 안내 문구를 보여준다.
     if (!cc.children.length) {
-      cc.innerHTML = '<p class="mt-panel-contacts-empty">표시할 주요 연락처가 없습니다.</p>';
+      cc.innerHTML = '<p class="mt-panel-contacts-empty">No key contacts to show.</p>';
     }
 
     document.getElementById(ids.panel).classList.add("show");
@@ -277,9 +281,9 @@ function createTimeline(ids) {
     const fmtYm = (k) => `${k.slice(0, 4)}.${k.slice(5)}`;
     fullRangeText =
       ALL_KEYS.length > 1
-        ? `${fmtYm(ALL_KEYS[0])} ~ ${fmtYm(ALL_KEYS[ALL_KEYS.length - 1])} 데이터`
+        ? `${fmtYm(ALL_KEYS[0])} ~ ${fmtYm(ALL_KEYS[ALL_KEYS.length - 1])} data`
         : ALL_KEYS.length
-          ? `${fmtYm(ALL_KEYS[0])} 데이터`
+          ? `${fmtYm(ALL_KEYS[0])} data`
           : "";
     if (ids.channel === mtActiveChannel) updateSharedRangeBadge(fullRangeText);
 
@@ -345,7 +349,7 @@ function createTimeline(ids) {
 
     const rangeLbl = document.getElementById(ids.rangeLbl);
     if (rangeLbl) {
-      rangeLbl.textContent = selectedYear ? `선택된 연도는 ${selectedYear}년도 입니다.` : "—";
+      rangeLbl.textContent = selectedYear ? `Selected year: ${selectedYear}` : "—";
     }
   }
 
@@ -465,7 +469,7 @@ function createKeywordPanel(ids, api) {
     const el = titleEl();
     if (!el || !key) return;
     el.textContent =
-      mode === "year" ? `${key}년 키워드` : `${key.slice(0, 4)}년 ${key.slice(5)}월 키워드`;
+      mode === "year" ? `${key} Keywords` : `${fmtMonthLong(key)} Keywords`;
   }
 
   // "YYYY-MM" 월의 마지막 날짜(일 수) 계산
@@ -485,10 +489,10 @@ function createKeywordPanel(ids, api) {
     currentYear = null;
     currentKeyword = null;
     if (backBtnEl()) backBtnEl().style.display = "none";
-    if (titleEl()) titleEl().textContent = "키워드";
+    if (titleEl()) titleEl().textContent = "Keywords";
 
     if (!idValue) {
-      renderEmpty("연결된 계정이 없습니다.");
+      renderEmpty("No connected account.");
       return;
     }
     try {
@@ -539,12 +543,12 @@ function createKeywordPanel(ids, api) {
 
     if (hintEl()) {
       hintEl().textContent = yearMode
-        ? "연도별 보기에서는 키워드 집계만 볼 수 있어요 — 일별 그래프는 월별 보기에서 확인해보세요."
-        : "키워드를 클릭하시면 일별 그래프가 나타납니다.";
+        ? "Yearly view shows keyword totals only — switch to monthly view for daily charts."
+        : "Click a keyword to see its daily chart.";
     }
 
     if (!keywords.length) {
-      bodyEl().innerHTML = `<div class="mt-empty"><i class="bi bi-chat-square-text"></i><p>이 기간에는 추출된 키워드가 없습니다.</p></div>`;
+      bodyEl().innerHTML = `<div class="mt-empty"><i class="bi bi-chat-square-text"></i><p>No keywords were extracted for this period.</p></div>`;
       return;
     }
 
@@ -584,8 +588,8 @@ function createKeywordPanel(ids, api) {
     currentKeyword = word;
     if (backBtnEl()) backBtnEl().style.display = "";
     if (hintEl())
-      hintEl().textContent = "막대에 마우스를 올리면 그 날 이 키워드를 언급한 사람을 볼 수 있어요.";
-    bodyEl().innerHTML = `<div class="mt-empty"><i class="bi bi-hourglass-split"></i><p>불러오는 중...</p></div>`;
+      hintEl().textContent = "Hover over a bar to see who mentioned this keyword that day.";
+    bodyEl().innerHTML = `<div class="mt-empty"><i class="bi bi-hourglass-split"></i><p>Loading...</p></div>`;
 
     const monthKey = currentMonthKey;
     let dayData = dailyCache[monthKey];
@@ -616,10 +620,10 @@ function createKeywordPanel(ids, api) {
 
     const wrap = document.createElement("div");
     wrap.className = "mt-kw-daily-box";
-    wrap.innerHTML = `<div class="mt-kw-daily-title"><span class="mt-kw-daily-swatch"></span>"${escHtml(word)}" 일별 언급 횟수 — ${escHtml(monthKey)}</div>`;
+    wrap.innerHTML = `<div class="mt-kw-daily-title"><span class="mt-kw-daily-swatch"></span>"${escHtml(word)}" daily mentions — ${escHtml(monthKey)}</div>`;
 
     if (!counts.length) {
-      wrap.innerHTML += `<p class="mt-kw-daily-empty">이 달에는 "${escHtml(word)}"가 언급된 날짜가 없습니다.</p>`;
+      wrap.innerHTML += `<p class="mt-kw-daily-empty">"${escHtml(word)}" was not mentioned on any day this month.</p>`;
       bodyEl().innerHTML = "";
       bodyEl().appendChild(wrap);
       return;
@@ -632,7 +636,7 @@ function createKeywordPanel(ids, api) {
     yAxis.innerHTML = `<span>${max.toLocaleString()}</span><span>${Math.round(max / 2).toLocaleString()}</span><span>0</span>`;
     const yAxisTitle = document.createElement("div");
     yAxisTitle.className = "mt-kw-daily-y-title";
-    yAxisTitle.textContent = "언급 횟수";
+    yAxisTitle.textContent = "Mentions";
 
     const scrollArea = document.createElement("div");
     scrollArea.className = "mt-kw-daily-scroll";
@@ -644,7 +648,7 @@ function createKeywordPanel(ids, api) {
     counts.forEach((c) => {
       const bar = document.createElement("div");
       bar.className = "mt-kw-daily-bar" + (c.count > 0 ? " has-count" : "");
-      bar.title = `${c.date}: ${c.count}건`;
+      bar.title = `${c.date}: ${c.count}`;
       const fill = document.createElement("div");
       fill.className = "mt-kw-daily-bar-fill";
       fill.style.height =
@@ -671,7 +675,7 @@ function createKeywordPanel(ids, api) {
     wrap.appendChild(chartWrap);
     const xAxisTitle = document.createElement("div");
     xAxisTitle.className = "mt-kw-daily-x-title";
-    xAxisTitle.textContent = "날짜(언급 있는 날만 표시)";
+    xAxisTitle.textContent = "Date (days with mentions only)";
     wrap.appendChild(xAxisTitle);
     bodyEl().innerHTML = "";
     bodyEl().appendChild(wrap);
@@ -684,7 +688,7 @@ function createKeywordPanel(ids, api) {
       renderMentionersTooltip(anchorEl, mentionersCache[cacheKey]);
       return;
     }
-    showTooltip(anchorEl, `<div class="mt-tooltip-row">불러오는 중...</div>`);
+    showTooltip(anchorEl, `<div class="mt-tooltip-row">Loading...</div>`);
     try {
       const j = await postJSON(api.mentionersUrl, {
         [api.idField]: idValue,
@@ -702,7 +706,7 @@ function createKeywordPanel(ids, api) {
   // 언급자 목록 데이터를 툴팁 HTML로 그려서 표시
   function renderMentionersTooltip(anchorEl, data) {
     if (!data.length) {
-      showTooltip(anchorEl, `<div class="mt-tooltip-row">이 날 언급한 사람이 없어요.</div>`);
+      showTooltip(anchorEl, `<div class="mt-tooltip-row">No one mentioned it that day.</div>`);
       return;
     }
     const html = data
@@ -713,7 +717,7 @@ function createKeywordPanel(ids, api) {
           : escHtml((name || "?").slice(0, 1));
         return `<div class="mt-tooltip-row">
           <span class="mt-tooltip-avatar">${avatarHtml}</span>
-          <span>${escHtml(name)} · ${p.count}회</span>
+          <span>${escHtml(name)} · ${p.count}x</span>
         </div>`;
       })
       .join("");
@@ -781,7 +785,7 @@ async function initMail(gmailId) {
   mailTimeline.setData(
     MONTH_DATA,
     YEAR_DATA,
-    "아직 생성된 요약이 없습니다. 데이터 분석하기를 먼저 실행해주세요."
+    "No summaries yet. Run Data analysis first."
   );
 }
 
@@ -792,8 +796,8 @@ async function initSelfAvatar(gmailId) {
     if (!url) return;
     const cursorEl = document.getElementById("pointerCursor");
     const msgCursorEl = document.getElementById("msgPointerCursor");
-    if (cursorEl) cursorEl.innerHTML = `<img src="${url}" alt="나">`;
-    if (msgCursorEl) msgCursorEl.innerHTML = `<img src="${url}" alt="나">`;
+    if (cursorEl) cursorEl.innerHTML = `<img src="${url}" alt="Me">`;
+    if (msgCursorEl) msgCursorEl.innerHTML = `<img src="${url}" alt="Me">`;
   };
   try {
     const cache = await postJSON("/self-avatar", { user_id: gmailId });
@@ -801,7 +805,7 @@ async function initSelfAvatar(gmailId) {
       applyAvatar(cache.url);
       return;
     }
-    const myName = sessionStorage.getItem("gw_user_name") || "나";
+    const myName = sessionStorage.getItem("gw_user_name") || "Me";
     const gen = await postJSON("/generate-self-avatar", {
       user_id: gmailId,
       name: myName,
@@ -838,7 +842,7 @@ async function loadMtMessengerData() {
   const chatroomId = currentChatroomId || (await chatroomIdPromise) || "";
   if (!chatroomId) {
     await msgKwPanel.init("");
-    return msgTimeline.setData({}, {}, "연결된 채팅방이 없습니다. 채팅방을 먼저 선택해주세요.");
+    return msgTimeline.setData({}, {}, "No connected chatroom. Select a chatroom first.");
   }
   try {
     const [monthData, yearData] = await Promise.all([
@@ -846,14 +850,14 @@ async function loadMtMessengerData() {
       fetchChatroomSummaries(chatroomId, "yearly"),
     ]);
     await msgKwPanel.init(chatroomId);
-    return msgTimeline.setData(monthData, yearData, "아직 생성된 메신저 요약이 없습니다.");
+    return msgTimeline.setData(monthData, yearData, "No messenger summaries yet.");
   } catch (e) {
     console.error("chatroom-summaries 오류:", e);
     await msgKwPanel.init("");
     return msgTimeline.setData(
       {},
       {},
-      "메신저 요약을 불러오지 못했습니다. 잠시 후 다시 시도해주세요."
+      "Failed to load messenger summaries. Please try again later."
     );
   }
 }

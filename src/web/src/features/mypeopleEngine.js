@@ -18,6 +18,10 @@ let mailView, messengerView;
 let brandFilterBtn, brandFilterLabel;
 let ddBtn, ddMenu, ddLabel;
 
+// 영문 하드코딩용 월 이름
+const MONTH_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const MONTH_LONG = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 /* 사용자 데이터 세션/로컬 스토리지 처리 */
 /* 메일 계정 & 채팅방 피커 연결 (중복 선언 제거 단일화) */
 // currentMailId라는 "지금 이 순간의 값"을 따로 두고, getCurrentMailId()가 그 값이 있으면 그걸, 없으면(아직 아무도 안 바꿨으면) 기존 userIdPromise 값을 쓴다 — 아래 모든 (await userIdPromise) 자리를 이걸로 바꿔서, 계정을 바꾼 뒤 해당 함수를 다시 부르기만 하면 새로고침 없이 새 계정 데이터를 그대로 다시 그릴 수 있다.
@@ -126,7 +130,7 @@ function renderDetailEmailLine(container, primaryEmail, groupEmails) {
   container.innerHTML = "";
   closeEmailListPortal();
   if (groupEmails.length <= 1) {
-    container.textContent = primaryEmail ? displayAccountLabel(primaryEmail) : "이메일 정보 없음";
+    container.textContent = primaryEmail ? displayAccountLabel(primaryEmail) : "No email info";
     return;
   }
   // "외 N개 주소" 라벨을 따로 붙이지 않고, 이메일 주소 자체를 토글 버튼으로 만든다 —
@@ -191,7 +195,7 @@ function closeMsgDescPopover() {
   const openBtn = document.querySelector(".mp-msg-desc-toggle.open");
   if (openBtn) {
     openBtn.classList.remove("open");
-    openBtn.innerHTML = '자세히 보기<i class="bi bi-chevron-down"></i>';
+    openBtn.innerHTML = 'Show more<i class="bi bi-chevron-down"></i>';
   }
 }
 // toggleBtn 바로 위쪽에 popoverHtml을 담은 팝오버를 띄우거나(이미 열려 있으면) 닫는다.
@@ -214,7 +218,7 @@ function toggleMessengerDescExpand(toggleBtn, popoverHtml) {
   portal.style.maxHeight = `${Math.max(120, window.innerHeight - top - 16)}px`;
   portal.classList.add("show");
   toggleBtn.classList.add("open");
-  toggleBtn.innerHTML = '접기<i class="bi bi-chevron-up"></i>';
+  toggleBtn.innerHTML = 'Show less<i class="bi bi-chevron-up"></i>';
 }
 // 팝오버 밖(또는 토글 버튼이 아닌 곳)을 클릭하면 닫는다.
 document.addEventListener("click", (e) => {
@@ -424,7 +428,7 @@ function isBrandSender(p) {
 
 // 카드에 표시할 이름 결정 — 지정된 이름 우선, 없으면 도메인/로컬파트에서 유추
 function resolveDisplayName(p) {
-  if (!p.email) return p.name && p.name.trim() ? p.name.trim() : "(알 수 없음)";
+  if (!p.email) return p.name && p.name.trim() ? p.name.trim() : "(Unknown)";
   const [local, domain] = p.email.split("@");
   // 이름이 아예 없을 때만 도메인에서 유추한다.
   if (p.name && p.name.trim()) return p.name.trim();
@@ -432,7 +436,7 @@ function resolveDisplayName(p) {
     const parts = (domain || "").split(".");
     return parts.length >= 3 ? parts[parts.length - 2] : parts[0];
   }
-  return local || "(알 수 없음)";
+  return local || "(Unknown)";
 }
 
 const AFFINITY_HUE = 158;
@@ -474,11 +478,11 @@ function affinityColor(aff) {
    "~% 이상" 식 퍼센트 표기 대신 말로 풀어서 보여주기 위한 구간(경계는
    100~90 / 90~70 / 70~45 / 45~20 / 20~0 요청값 그대로 사용). */
 const AFFINITY_LABEL_TIERS = [
-  { min: 90, label: "아주 친밀한 관계" },
-  { min: 70, label: "친밀한 관계" },
-  { min: 45, label: "보통의 관계" },
-  { min: 20, label: "친밀하지 않은 관계" },
-  { min: -Infinity, label: "무관한 관계" },
+  { min: 90, label: "Very close" },
+  { min: 70, label: "Close" },
+  { min: 45, label: "Moderate" },
+  { min: 20, label: "Not close" },
+  { min: -Infinity, label: "Unrelated" },
 ];
 // 친밀도 퍼센트를 5단계 한글 라벨로 변환
 function affinityLabelFromPct(pct) {
@@ -495,11 +499,11 @@ function affinityLabel(aff) {
 // 단톡방 분위기 점수(0~100)를 5단계 한글 라벨로 변환
 function moodLabel(score) {
   if (score == null) return null;
-  if (score >= 80) return "매우 사적이고 친밀한 분위기";
-  if (score >= 60) return "편안하고 친근한 분위기";
-  if (score >= 40) return "무난한 분위기";
-  if (score >= 20) return "다소 사무적인 분위기";
-  return "격식 있고 사무적인 분위기";
+  if (score >= 80) return "Very personal and intimate";
+  if (score >= 60) return "Relaxed and friendly";
+  if (score >= 40) return "Neutral";
+  if (score >= 20) return "Somewhat businesslike";
+  return "Formal and businesslike";
 }
 // 단톡방 분위기 점수를 이모지로 변환
 function moodEmoji(score) {
@@ -726,7 +730,7 @@ function updateCardBadges() {
         badge.className = "mp-period-badge";
         card.appendChild(badge);
       }
-      badge.textContent = total + "건";
+      badge.textContent = String(total);
     } else if (badge) {
       badge.remove();
     }
@@ -740,7 +744,7 @@ function renderCards() {
   // periodStats가 아직 한 번도 로딩되지 않은 시점(페이지 진입 직후, 아바타 생성 배치가 먼저 끝나서 renderCards가 조기 호출되는 경우 등)에는 필터 안 된 원본 목록을 절대 그리지 않는다 — 안 그러면 avatarGeneration 등 다른 곳에서 부르는 renderCards() 때문에 여전히 "많이 떴다가 5개로 줄어드는" 깜빡임이 재현된다.
   if (!periodStatsLoaded) {
     if (grid) {
-      grid.innerHTML = `<div class="mp-empty"><i class="bi bi-people"></i><p>데이터를 불러오는 중...</p></div>`;
+      grid.innerHTML = `<div class="mp-empty"><i class="bi bi-people"></i><p>Loading data...</p></div>`;
     }
     return;
   }
@@ -774,10 +778,10 @@ function renderCards() {
   currentRenderedList = list; // 클릭 시 이 배열로 찾아야 병합된 _groupEmails가 유지된다
 
   const countEl = document.getElementById("mp-count");
-  if (countEl) countEl.textContent = list.length ? `${list.length}명` : "";
+  if (countEl) countEl.textContent = list.length ? `${list.length} people` : "";
 
   if (!list.length) {
-    grid.innerHTML = `<div class="mp-empty"><i class="bi bi-people"></i><p>데이터를 불러오는 중...</p></div>`;
+    grid.innerHTML = `<div class="mp-empty"><i class="bi bi-people"></i><p>Loading data...</p></div>`;
     return;
   }
 
@@ -801,13 +805,13 @@ function renderCards() {
       badge = "";
     } else if (sortMode === "sent") {
       const cnt = sumMap(sentStatsMap, p);
-      if (cnt > 0) badge = `<div class="mp-period-badge sent">보낸 ${cnt}건</div>`;
+      if (cnt > 0) badge = `<div class="mp-period-badge sent">Sent ${cnt}</div>`;
     } else if (sortMode === "received") {
       const cnt = sumMap(receivedStatsMap, p);
-      if (cnt > 0) badge = `<div class="mp-period-badge recv">받은 ${cnt}건</div>`;
+      if (cnt > 0) badge = `<div class="mp-period-badge recv">Received ${cnt}</div>`;
     } else if (sortMode === "total") {
       const totalCnt = sumMap(sentStatsMap, p) + sumMap(receivedStatsMap, p) || total;
-      if (totalCnt > 0) badge = `<div class="mp-period-badge">${totalCnt}건</div>`;
+      if (totalCnt > 0) badge = `<div class="mp-period-badge">${totalCnt}</div>`;
     }
     return `
             <div class="mp-card ca-fade" style="${cardVars}" data-idx="${i}" data-name="${p.name || ""}" data-email="${p.email || ""}" title="${displayAccountLabel(p.email || "")}">
@@ -846,7 +850,7 @@ function renderAffinityBands(list, cardHtml) {
 
     const cardsHtml = bandPeople.length
       ? bandPeople.map((p) => cardHtml(p, globalIdx++)).join("")
-      : `<div class="mp-band-empty">이 등급에 해당하는 사람이 없습니다.</div>`;
+      : `<div class="mp-band-empty">No one in this tier.</div>`;
 
     return `
       <div class="mp-band">
@@ -1023,7 +1027,7 @@ async function loadPeople() {
   // 활동 없는 발신자가 필터링되기 전 "원본" 목록이 잠깐 화면에 나왔다가 사라지는 깜빡임을 막기 위해, 기간 통계(periodStats)가 아직 없는 첫 렌더에서는 카드 목록 대신 로딩 표시를 유지한다 — 실제 카드는 아래에서 fetchPeriodStats까지 끝난 뒤 한 번만 그린다.
   const grid = document.getElementById("mp-grid");
   if (grid) {
-    grid.innerHTML = `<div class="mp-empty"><i class="bi bi-people"></i><p>데이터를 불러오는 중...</p></div>`;
+    grid.innerHTML = `<div class="mp-empty"><i class="bi bi-people"></i><p>Loading data...</p></div>`;
   }
 
   const gmailId = await getCurrentMailId();
@@ -1136,9 +1140,9 @@ async function initMyAvatar() {
   const gmailId = await getCurrentMailId();
   const myNameEl = document.getElementById("mp-detail-my-name");
   const myEmailEl = document.getElementById("mp-detail-my-email");
-  if (myNameEl) myNameEl.textContent = sessionStorage.getItem("gw_user_name") || "나";
+  if (myNameEl) myNameEl.textContent = sessionStorage.getItem("gw_user_name") || "Me";
   // 사람 상세보기의 "나" 이메일은 화면표시용 오버라이드 없이 실제 계정 그대로 보여준다.
-  if (myEmailEl) myEmailEl.textContent = gmailId || "이메일 정보 없음";
+  if (myEmailEl) myEmailEl.textContent = gmailId || "No email info";
   if (!gmailId) return;
   try {
     const cacheRes = await fetch("/self-avatar", {
@@ -1154,7 +1158,7 @@ async function initMyAvatar() {
         return;
       }
     }
-    const myName = sessionStorage.getItem("gw_user_name") || "나";
+    const myName = sessionStorage.getItem("gw_user_name") || "Me";
     const genRes = await fetch("/generate-self-avatar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -1176,25 +1180,25 @@ async function initMyAvatar() {
 function refreshSelfAvatarEl() {
   const el = document.getElementById("mp-detail-avatar-self");
   if (!el || !myAvatarUrl) return;
-  el.innerHTML = `<img src="${myAvatarUrl}" alt="나" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
+  el.innerHTML = `<img src="${myAvatarUrl}" alt="Me" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
 }
 
 // 메일/메신저 전환 버튼은 없앰(My Time과 동일) — 사이드바에서 메일 계정을 고르면 mailView가, 메신저 데이터를 고르면 messengerView가 뜨도록 setChannel()을 initGlobalFilter 콜백에서 직접 호출한다.
 const MAIL_SORT_OPTIONS = [
-  { value: "affinity", label: "친밀도" },
-  { value: "name", label: "이름" },
-  { value: "total", label: "송수신 횟수" },
-  { value: "received", label: "받은 메일수" },
-  { value: "sent", label: "보낸 메일수" },
+  { value: "affinity", label: "Affinity" },
+  { value: "name", label: "Name" },
+  { value: "total", label: "Total mails" },
+  { value: "received", label: "Received" },
+  { value: "sent", label: "Sent" },
 ];
 const ROOM_SORT_OPTIONS = [
-  { value: "name", label: "이름" },
-  { value: "total", label: "총 채팅횟수" },
-  { value: "mood", label: "분위기" },
+  { value: "name", label: "Name" },
+  { value: "total", label: "Total messages" },
+  { value: "mood", label: "Mood" },
 ];
 const PEOPLE_SORT_OPTIONS = [
-  { value: "name", label: "이름" },
-  { value: "count", label: "채팅횟수" },
+  { value: "name", label: "Name" },
+  { value: "count", label: "Messages" },
 ];
 
 // 정렬 옵션 배열로 드롭다운 메뉴 항목 HTML 생성
@@ -1328,7 +1332,7 @@ async function loadMessengerView() {
   messengerView.innerHTML = `
     <div class="mp-empty">
       <i class="bi bi-chat-dots"></i>
-      <p>단톡방 목록을 불러오는 중...</p>
+      <p>Loading group chats...</p>
     </div>
   `;
   await fetchMessengerChatroomsForRange();
@@ -1381,7 +1385,7 @@ async function renderChatroomGrid() {
     messengerView.innerHTML = `
       <div class="mp-empty">
         <i class="bi bi-chat-dots"></i>
-        <p>이 기간에 해당하는 단톡방이 없습니다.</p>
+        <p>No group chats in this period.</p>
       </div>
     `;
     return;
@@ -1390,7 +1394,7 @@ async function renderChatroomGrid() {
     messengerView.innerHTML = `
       <div class="mp-empty">
         <i class="bi bi-chat-dots"></i>
-        <p>분위기 계산 중...</p>
+        <p>Calculating mood...</p>
       </div>
     `;
   }
@@ -1405,7 +1409,7 @@ async function renderChatroomGrid() {
         <div class="mp-card mp-room-card" data-idx="${i}" title="${esc(r.chatroom_name)}">
           <div class="mp-avatar mp-room-avatar">${buildRoomAvatarHtml(r)}</div>
           <div class="mp-name" style="font-size:${nameFontSize(r.chatroom_name)}">${esc(r.chatroom_name)}</div>
-          <div class="mp-period-badge">${r.participant_count}명 · ${r.message_count}건${moodText}</div>
+          <div class="mp-period-badge">${r.participant_count} people · ${r.message_count} messages${moodText}</div>
         </div>`;
         })
         .join("")}
@@ -1420,7 +1424,7 @@ async function openChatroom(chatroomId, chatroomName) {
   messengerView.innerHTML = `
     <div class="mp-empty">
       <i class="bi bi-people"></i>
-      <p>참여자를 불러오는 중...</p>
+      <p>Loading participants...</p>
     </div>
   `;
   // 타임슬라이더를 이 방만의 기간으로 초기화한 다음 사람 목록을 불러온다 (fetchAndRenderChatroomPeople이 이때 초기화된 selMin/selMax 기준으로 조회하므로 이 방의 데이터만 뜬다).
@@ -1476,7 +1480,7 @@ function renderChatroomPeople(chatroomName, people, moodScore) {
   currentChatroomPeople = people;
   // 메신저 방 참여자 화면에서도 "My People" 옆 명수를 실제 이 방 참여자 수로 채운다.
   const peopleCountEl = document.getElementById("mp-count");
-  if (peopleCountEl) peopleCountEl.textContent = people.length ? `${people.length}명` : "";
+  if (peopleCountEl) peopleCountEl.textContent = people.length ? `${people.length} people` : "";
   const cardsHtml = people.length
     ? people
         .map((p, i) => {
@@ -1487,11 +1491,11 @@ function renderChatroomPeople(chatroomName, people, moodScore) {
         <div class="mp-card mp-person-card" data-idx="${i}" title="${esc(p.name)}">
           <div class="mp-avatar" style="background:${CARD_BG[i % CARD_BG.length]};color:${AVATAR_COLORS_DETAIL[i % AVATAR_COLORS_DETAIL.length]};">${avatarInner}</div>
           <div class="mp-name" style="font-size:${nameFontSize(p.name)}">${esc(p.name)}</div>
-          <div class="mp-period-badge">${p.message_count}건</div>
+          <div class="mp-period-badge">${p.message_count}</div>
         </div>`;
         })
         .join("")
-    : `<div class="mp-empty"><i class="bi bi-people"></i><p>이 기간엔 메신저를 보낸 참여자가 없습니다.</p></div>`;
+    : `<div class="mp-empty"><i class="bi bi-people"></i><p>No participants sent messages in this period.</p></div>`;
 
   const moodHtml =
     moodScore != null
@@ -1631,7 +1635,7 @@ function renderDescription(person, descriptions) {
   );
   const rawDesc = found ? found.description : null;
   if (!rawDesc) {
-    el.innerHTML = '<p class="mp-desc-profile-empty">등록된 설명이 없습니다.</p>';
+    el.innerHTML = '<p class="mp-desc-profile-empty">No description available.</p>';
     return;
   }
   const lines = rawDesc.split("\n").filter(Boolean);
@@ -1672,13 +1676,13 @@ function renderBarChart(data) {
   const yEl = document.getElementById("mp-vchart-y");
   if (!data || !data.monthly || !data.monthly.length) {
     chartArea.innerHTML =
-      '<span style="color:#b0b0b0;font-size:1rem;font-style:italic;">해당 기간 데이터 없음</span>';
+      '<span style="color:#b0b0b0;font-size:1rem;font-style:italic;">No data for this period</span>';
     if (totalEl) totalEl.textContent = "";
     if (yEl) yEl.innerHTML = "<span></span><span></span><span>0</span>";
     return;
   }
   const total = data.total || { sent: 0, received: 0 };
-  if (totalEl) totalEl.textContent = `총 ${total.sent + total.received}건`;
+  if (totalEl) totalEl.textContent = `Total ${total.sent + total.received}`;
   const maxVal = Math.max(...data.monthly.map((m) => Math.max(m.sent, m.received)), 1);
   if (yEl) {
     const mid = Math.round(maxVal / 2);
@@ -1693,17 +1697,17 @@ function renderBarChart(data) {
           const sentPct = Math.max(2, Math.round((m.sent / maxVal) * 100));
           const recvPct = Math.max(2, Math.round((m.received / maxVal) * 100));
           const mon = m.month.split("-")[1];
-          return `<div class="mp-vchart-group" data-month="${m.month}" data-sent="${m.sent}" data-recv="${m.received}" title="${m.month}: 보낸 ${m.sent}건 · 받은 ${m.received}건 (눌러서 목록보기)">
+          return `<div class="mp-vchart-group" data-month="${m.month}" data-sent="${m.sent}" data-recv="${m.received}" title="${m.month}: Sent ${m.sent} · Received ${m.received} (click to view)">
               <div class="mp-vchart-bars">
-                <div class="mp-vchart-bar sent" style="height:${sentPct}%" title="보낸: ${m.sent}"></div>
-                <div class="mp-vchart-bar recv" style="height:${recvPct}%" title="받은: ${m.received}"></div>
+                <div class="mp-vchart-bar sent" style="height:${sentPct}%" title="Sent: ${m.sent}"></div>
+                <div class="mp-vchart-bar recv" style="height:${recvPct}%" title="Received: ${m.received}"></div>
               </div>
-              <div class="mp-vchart-label"><span class="mp-vchart-month">${parseInt(mon, 10)}월</span></div>
+              <div class="mp-vchart-label"><span class="mp-vchart-month">${MONTH_SHORT[parseInt(mon, 10) - 1]}</span></div>
             </div>`;
         })
         .join("");
       return `<div class="mp-vchart-year-group">
-              <div class="mp-vchart-year-label">${g.year}년</div>
+              <div class="mp-vchart-year-label">${g.year}</div>
               <div class="mp-vchart-year-months">${monthsHtml}</div>
             </div>`;
     })
@@ -1736,12 +1740,12 @@ function renderMessengerBarChart(data) {
   const yEl = document.getElementById("mp-vchart-y");
   if (!data || !data.monthly || !data.monthly.length) {
     chartArea.innerHTML =
-      '<span style="color:#a0b8b0;font-size:0.82rem;font-style:italic;">메신저 데이터 없음</span>';
+      '<span style="color:#a0b8b0;font-size:0.82rem;font-style:italic;">No messenger data</span>';
     if (totalEl) totalEl.textContent = "";
     if (yEl) yEl.innerHTML = "<span></span><span></span><span>0</span>";
     return;
   }
-  if (totalEl) totalEl.textContent = `총 ${data.total || 0}건`;
+  if (totalEl) totalEl.textContent = `Total ${data.total || 0}`;
   const maxVal = Math.max(...data.monthly.map((m) => m.count), 1);
   if (yEl) {
     const mid = Math.round(maxVal / 2);
@@ -1756,16 +1760,16 @@ function renderMessengerBarChart(data) {
         .map((m) => {
           const pct = Math.max(2, Math.round((m.count / maxVal) * 100));
           const mon = m.month.split("-")[1];
-          return `<div class="mp-vchart-group" data-month="${m.month}" title="${m.month}: ${m.count}건 (눌러서 일별로 보기)">
+          return `<div class="mp-vchart-group" data-month="${m.month}" title="${m.month}: ${m.count} (click for daily view)">
               <div class="mp-vchart-bars">
-                <div class="mp-vchart-bar sent" style="height:${pct}%" title="${m.count}건"></div>
+                <div class="mp-vchart-bar sent" style="height:${pct}%" title="${m.count}"></div>
               </div>
-              <div class="mp-vchart-label"><span class="mp-vchart-month">${parseInt(mon, 10)}월</span></div>
+              <div class="mp-vchart-label"><span class="mp-vchart-month">${MONTH_SHORT[parseInt(mon, 10) - 1]}</span></div>
             </div>`;
         })
         .join("");
       return `<div class="mp-vchart-year-group">
-              <div class="mp-vchart-year-label">${g.year}년</div>
+              <div class="mp-vchart-year-label">${g.year}</div>
               <div class="mp-vchart-year-months">${monthsHtml}</div>
             </div>`;
     })
@@ -1792,7 +1796,7 @@ function renderMessengerBarChart(data) {
 function renderRelationDiagram(personName, relationships) {
   const el = document.getElementById("mp-desc-profile-content");
   if (!relationships.length) {
-    el.innerHTML = '<p class="mp-desc-profile-empty">파악된 관계가 없습니다.</p>';
+    el.innerHTML = '<p class="mp-desc-profile-empty">No relationships found.</p>';
     return;
   }
   const others = relationships.map((r) => ({
@@ -1808,18 +1812,18 @@ function renderRelationDiagram(personName, relationships) {
           : initials(o.name);
       // 그 사람의 참여 패턴(메시지 건수) 정보를 기존 카드 안에 표처럼 2열(항목/값)로 선을 그어 구분해 보여준다.
       const participationText =
-        p && p.message_count != null ? `메시지 ${p.message_count.toLocaleString()}건` : "정보 없음";
+        p && p.message_count != null ? `${p.message_count.toLocaleString()} messages` : "No info";
       return `
         <div class="mp-relation-card">
           <div class="mp-relation-card-avatar">${avatarInner}</div>
           <div class="mp-relation-card-name">${esc(o.name)}</div>
           <div class="mp-relation-card-table">
             <div class="mp-relation-card-row">
-              <div class="mp-relation-card-cell mp-relation-card-cell-key">관계</div>
-              <div class="mp-relation-card-cell mp-relation-card-cell-val${o.label ? "" : " mp-relation-card-cell-empty"}">${o.label ? esc(o.label) : "파악된 설명 없음"}</div>
+              <div class="mp-relation-card-cell mp-relation-card-cell-key">Relationship</div>
+              <div class="mp-relation-card-cell mp-relation-card-cell-val${o.label ? "" : " mp-relation-card-cell-empty"}">${o.label ? esc(o.label) : "No description"}</div>
             </div>
             <div class="mp-relation-card-row">
-              <div class="mp-relation-card-cell mp-relation-card-cell-key">메신저 횟수</div>
+              <div class="mp-relation-card-cell mp-relation-card-cell-key">Messages</div>
               <div class="mp-relation-card-cell mp-relation-card-cell-val">${esc(participationText)}</div>
             </div>
           </div>
@@ -1837,15 +1841,15 @@ let currentMailDayEmails = [];
 // "YYYY-MM"을 "YYYY년 M월"로 포맷
 function fmtMonthLabel(month) {
   const [y, m] = month.split("-");
-  return `${y}년 ${parseInt(m)}월`;
+  return `${MONTH_LONG[parseInt(m) - 1]} ${y}`;
 }
 
 // 메일 날짜시간 문자열을 "D일 HH:MM"으로 포맷
 function fmtEmailDateTime(dateStr) {
   const [datePart, timePart] = (dateStr || "").split(" ");
-  const day = parseInt((datePart || "").split("-")[2], 10) || "";
+  const [, mon, dd] = (datePart || "").split("-");
   const time = (timePart || "").slice(0, 5);
-  return `${day}일 ${time}`;
+  return `${MONTH_SHORT[parseInt(mon, 10) - 1] || ""} ${parseInt(dd, 10) || ""}, ${time}`;
 }
 
 // 선택된 달의 일별 메일 교환 건수 목록 렌더링
@@ -1853,7 +1857,7 @@ function renderMailDayList(days) {
   const listEl = document.getElementById("mp-echange-list-body");
   if (!days.length) {
     listEl.innerHTML =
-      '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">이 달에는 주고받은 메일이 없어요.</p>';
+      '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">No emails exchanged this month.</p>';
     return;
   }
   listEl.innerHTML = days
@@ -1861,7 +1865,7 @@ function renderMailDayList(days) {
       (d) => `
         <button class="mp-day-row" type="button" data-date="${d.date}">
           <span class="mp-day-row-date">${fmtDayLabel(d.date)}</span>
-          <span class="mp-day-row-count">${d.count}건</span>
+          <span class="mp-day-row-count">${d.count}</span>
         </button>`
     )
     .join("");
@@ -1874,10 +1878,10 @@ async function openEmailDrawer(month, sentCount, recvCount) {
   const personName = person ? resolveDisplayName(person) : "";
   document.getElementById("mp-echange-list-title").textContent = fmtMonthLabel(month);
   document.getElementById("mp-echange-list-count").textContent = person
-    ? `${personName} · 총 ${sentCount + recvCount}건 (보낸 ${sentCount} · 받은 ${recvCount}) · 막대를 누르면 해당 월의, 날짜를 누르면 그날의 원본 메일을 확인할 수 있어요`
+    ? `${personName} · Total ${sentCount + recvCount} (Sent ${sentCount} · Received ${recvCount}) · Click a bar or date to see emails`
     : "";
   document.getElementById("mp-echange-list-body").innerHTML =
-    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">불러오는 중...</p>';
+    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">Loading...</p>';
 
   const chartview = document.getElementById("mp-echange-chartview");
   const listview = document.getElementById("mp-echange-listview");
@@ -1938,7 +1942,7 @@ async function openMailDayChat(date) {
   document.getElementById("mp-echange-list-title").textContent = fmtDayLabel(date);
   document.getElementById("mp-echange-list-count").textContent = "";
   listEl.innerHTML =
-    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">불러오는 중...</p>';
+    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">Loading...</p>';
 
   const personAddrs = personEmails(person);
   if (!personAddrs.length) {
@@ -1983,9 +1987,9 @@ async function fetchMergedDayEmails(personAddrs, gmailId, date) {
 // 특정 날짜의 메일 목록(보낸/받은 태그 포함)을 렌더링
 function renderMailDayEmailList(emails) {
   const listEl = document.getElementById("mp-echange-list-body");
-  const backBtn = `<button class="mp-back-btn" type="button" id="mp-day-back-btn"><i class="bi bi-arrow-left"></i> 날짜 목록</button>`;
+  const backBtn = `<button class="mp-back-btn" type="button" id="mp-day-back-btn"><i class="bi bi-arrow-left"></i> Dates</button>`;
   if (!emails.length) {
-    listEl.innerHTML = `${backBtn}<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">그날 주고받은 메일을 찾지 못했어요.</p>`;
+    listEl.innerHTML = `${backBtn}<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">No emails found for that day.</p>`;
     return;
   }
   const rowsHtml = emails
@@ -1993,10 +1997,10 @@ function renderMailDayEmailList(emails) {
       (e, i) => `
         <button class="mp-email-row ${e.direction}" type="button" data-idx="${i}">
           <div class="mp-email-card-top">
-            <span class="mp-email-tag ${e.direction}">${e.direction === "sent" ? "보낸 메일" : "받은 메일"}</span>
+            <span class="mp-email-tag ${e.direction}">${e.direction === "sent" ? "Sent" : "Received"}</span>
             <span class="mp-email-date">${fmtEmailDateTime(e.date)}</span>
           </div>
-          <div class="mp-email-subject">${esc(e.subject || "(제목 없음)")}</div>
+          <div class="mp-email-subject">${esc(e.subject || "(No subject)")}</div>
           <div class="mp-email-from">${esc(e.sender || "")} → ${esc(e.receiver || "")}</div>
         </button>`
     )
@@ -2007,14 +2011,14 @@ function renderMailDayEmailList(emails) {
 // 메일 한 통의 본문 상세를 렌더링
 function renderMailEmailDetail(email) {
   const listEl = document.getElementById("mp-echange-list-body");
-  const backBtn = `<button class="mp-back-btn" type="button" id="mp-email-back-btn"><i class="bi bi-arrow-left"></i> 메일 목록</button>`;
+  const backBtn = `<button class="mp-back-btn" type="button" id="mp-email-back-btn"><i class="bi bi-arrow-left"></i> Emails</button>`;
   const cardsHtml = `
         <div class="mp-email-card ${email.direction}">
           <div class="mp-email-card-top">
-            <span class="mp-email-tag ${email.direction}">${email.direction === "sent" ? "보낸 메일" : "받은 메일"}</span>
+            <span class="mp-email-tag ${email.direction}">${email.direction === "sent" ? "Sent" : "Received"}</span>
             <span class="mp-email-date">${fmtEmailDateTime(email.date)}</span>
           </div>
-          <div class="mp-email-subject">${esc(email.subject || "(제목 없음)")}</div>
+          <div class="mp-email-subject">${esc(email.subject || "(No subject)")}</div>
           <div class="mp-email-from">${esc(email.sender || "")} → ${esc(email.receiver || "")}</div>
           <div class="mp-email-body">${esc(email.body || "")}</div>
         </div>`;
@@ -2035,10 +2039,10 @@ export function closeEmailDrawer() {
   document.querySelectorAll(".mp-vchart-group.active").forEach((g) => g.classList.remove("active"));
 }
 
-// "YYYY-MM-DD"를 "YYYY년 M월 D일"로 포맷
+// "YYYY-MM-DD"를 "Mon D, YYYY"로 포맷
 function fmtDayLabel(dateStr) {
   const [y, m, d] = dateStr.split("-").map(Number);
-  return `${y}년 ${m}월 ${d}일`;
+  return `${MONTH_SHORT[m - 1]} ${d}, ${y}`;
 }
 
 // 특정 참여자와의 월별 메신저 교환 드로어를 열고 그 달의 일별 목록을 조회
@@ -2048,10 +2052,10 @@ async function openMessengerDayList(month) {
 
   document.getElementById("mp-echange-list-title").textContent = fmtMonthLabel(month);
   document.getElementById("mp-echange-list-count").textContent = person
-    ? `${person.name} · 막대를 누르면 해당 월의, 날짜를 누르면 그날의 원본 대화를 확인할 수 있어요`
+    ? `${person.name} · Click a bar or date to see chats`
     : "";
   document.getElementById("mp-echange-list-body").innerHTML =
-    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">불러오는 중...</p>';
+    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">Loading...</p>';
 
   const chartview = document.getElementById("mp-echange-chartview");
   const listview = document.getElementById("mp-echange-listview");
@@ -2095,7 +2099,7 @@ function renderMessengerDayList(days) {
   const listEl = document.getElementById("mp-echange-list-body");
   if (!days.length) {
     listEl.innerHTML =
-      '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">이 달엔 보낸 메신저가 없어요.</p>';
+      '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">No messages sent this month.</p>';
     return;
   }
   listEl.innerHTML = days
@@ -2103,7 +2107,7 @@ function renderMessengerDayList(days) {
       (d) => `
         <button class="mp-day-row" type="button" data-date="${d.date}">
           <span class="mp-day-row-date">${fmtDayLabel(d.date)}</span>
-          <span class="mp-day-row-count">${d.count}건</span>
+          <span class="mp-day-row-count">${d.count}</span>
         </button>`
     )
     .join("");
@@ -2115,7 +2119,7 @@ async function openMessengerDayChat(date) {
   document.getElementById("mp-echange-list-title").textContent = fmtDayLabel(date);
   document.getElementById("mp-echange-list-count").textContent = "";
   listEl.innerHTML =
-    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">불러오는 중...</p>';
+    '<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">Loading...</p>';
 
   try {
     const res = await fetch("/chatroom-day-messages", {
@@ -2137,9 +2141,9 @@ async function openMessengerDayChat(date) {
 // 특정 날짜의 채팅 로그 렌더링(선택된 참여자 발언은 강조 표시)
 function renderMessengerDayChat(messages) {
   const listEl = document.getElementById("mp-echange-list-body");
-  const backBtn = `<button class="mp-back-btn" type="button" id="mp-day-back-btn"><i class="bi bi-arrow-left"></i> 날짜 목록</button>`;
+  const backBtn = `<button class="mp-back-btn" type="button" id="mp-day-back-btn"><i class="bi bi-arrow-left"></i> Dates</button>`;
   if (!messages.length) {
-    listEl.innerHTML = `${backBtn}<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">그날 대화를 찾지 못했어요.</p>`;
+    listEl.innerHTML = `${backBtn}<p style="color:#b7ada0;font-size:0.85rem;text-align:center;padding:40px 0;">No chat found for that day.</p>`;
     return;
   }
   // 지금 상세보기로 열어본 그 사람(currentMessengerPerson)의 발언을 한눈에 찾을 수 있도록, 이름과 발신자가 일치하는 줄만 연한 빨간 배경으로 표시한다.
@@ -2162,7 +2166,7 @@ function renderWordCloud(keywords, targetId) {
   const wrap = document.getElementById(targetId || "mp-detail-wc");
   if (!keywords || !keywords.length) {
     wrap.innerHTML =
-      '<span style="color:#c0c0c0;font-size:1rem;font-style:italic;">키워드 없음</span>';
+      '<span style="color:#c0c0c0;font-size:1rem;font-style:italic;">No keywords</span>';
     return;
   }
   const sorted = [...keywords].sort((a, b) => b.count - a.count).slice(0, 20);
@@ -2175,7 +2179,7 @@ function renderWordCloud(keywords, targetId) {
     const el = document.createElement("span");
     el.className = "mp-wc-word";
     el.style.cssText = `font-size:${fs}px;color:${WC_COLORS[idx % WC_COLORS.length]};transition-delay:${(idx * 0.04).toFixed(2)}s;`;
-    el.title = `${kw.word}: ${kw.count}회`;
+    el.title = `${kw.word}: ${kw.count}`;
     el.innerHTML = `${kw.word}<sup class="mp-wc-count">${kw.count}</sup>`;
     wrap.appendChild(el);
     requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("show")));
@@ -2275,9 +2279,9 @@ async function refreshDetailStats(person, retriesLeft = 3) {
   const gmailId = await getCurrentMailId();
 
   document.getElementById("mp-chart").innerHTML =
-    '<span style="color:#b0b0b0;font-size:1rem;">로딩 중...</span>';
+    '<span style="color:#b0b0b0;font-size:1rem;">Loading...</span>';
   document.getElementById("mp-detail-wc").innerHTML =
-    '<span style="color:#b0b0b0;font-size:1rem;">로딩 중...</span>';
+    '<span style="color:#b0b0b0;font-size:1rem;">Loading...</span>';
 
   const post = (body) => ({
     method: "POST",
@@ -2317,7 +2321,7 @@ async function refreshDetailStats(person, retriesLeft = 3) {
 
   if (_looksLikeStillSaving(person, merged.total) && retriesLeft > 0) {
     document.getElementById("mp-chart").innerHTML =
-      '<span style="color:#b0b0b0;font-size:1rem;">데이터 저장 중입니다. 잠시만 기다려주세요...</span>';
+      '<span style="color:#b0b0b0;font-size:1rem;">Saving data. Please wait a moment...</span>';
     setTimeout(() => refreshDetailStats(person, retriesLeft - 1), 3000);
     return;
   }
@@ -2345,10 +2349,10 @@ function setStatsLegend(mode) {
   const item = (color, label) =>
     `<span style="display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:600;color:#4a4640;white-space:nowrap;flex-shrink:0;">${dot(color)}${label}</span>`;
   if (mode === "mail") {
-    legend.innerHTML = item("#12886e", "보낸 메일") + item("#5a94e8", "받은 메일");
+    legend.innerHTML = item("#12886e", "Sent") + item("#5a94e8", "Received");
     legend.style.display = "flex";
   } else if (mode === "messenger") {
-    legend.innerHTML = item("#12886e", "보낸 메신저");
+    legend.innerHTML = item("#12886e", "Sent messages");
     legend.style.display = "flex";
   } else {
     legend.innerHTML = "";
@@ -2370,10 +2374,10 @@ async function openDetail(person, rowIndex) {
   // 이미 새 사람 기준으로 확정해둔다 — 그래야 드로어 등 나중에 열리는 다른 화면이 예전
   // 사람 정보를 잘못 참조하는 불일치가 안 생긴다.
   currentDetailPerson = person;
-  document.getElementById("mp-tab-stats").textContent = "메일 통계";
-  document.getElementById("mp-stats-title").textContent = "메일 통계";
-  document.getElementById("mp-tab-desc").textContent = "설명";
-  document.getElementById("mp-tab-kw").textContent = "키워드";
+  document.getElementById("mp-tab-stats").textContent = "Mail stats";
+  document.getElementById("mp-stats-title").textContent = "Mail stats";
+  document.getElementById("mp-tab-desc").textContent = "Description";
+  document.getElementById("mp-tab-kw").textContent = "Keywords";
   closeEmailDrawer();
 
   // 색인/저장이 아직 덜 끝난 사람을 열었을 때 아래 헤더 채우기 중 하나라도 실패하면
@@ -2391,10 +2395,10 @@ async function openDetail(person, rowIndex) {
 
     const selfAvatarEl = document.getElementById("mp-detail-avatar-self");
     if (myAvatarUrl) {
-      selfAvatarEl.innerHTML = `<img src="${myAvatarUrl}" alt="나" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
+      selfAvatarEl.innerHTML = `<img src="${myAvatarUrl}" alt="Me" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
     } else {
       selfAvatarEl.innerHTML = "";
-      selfAvatarEl.textContent = "나";
+      selfAvatarEl.textContent = "Me";
       selfAvatarEl.style.background = "linear-gradient(150deg,#e0e0e0,#c5c5c5)";
       selfAvatarEl.style.color = "#515151";
     }
@@ -2407,7 +2411,7 @@ async function openDetail(person, rowIndex) {
       }
       const label = findRelationLabel(relationships, person.email);
       // 배지(박스) 없이 선 밑에 아이콘 없는 순수 텍스트로만 "관계: 기업" 형식으로 표시한다.
-      relationLabelEl.textContent = label ? `관계: ${label}` : "";
+      relationLabelEl.textContent = label ? `Relationship: ${label}` : "";
     });
 
     // 아바타 배경은 친밀도에 따른 색 대신 "나" 아바타와 동일한 무채색 그라데이션을 사용한다.
@@ -2448,9 +2452,9 @@ async function openDetail(person, rowIndex) {
       fallbackAvatarEl.style.color = "#515151";
     }
     const fallbackNameEl = document.getElementById("mp-detail-name");
-    if (fallbackNameEl) fallbackNameEl.textContent = "DB에 저장 중입니다";
+    if (fallbackNameEl) fallbackNameEl.textContent = "Saving to DB";
     const fallbackEmailEl = document.getElementById("mp-detail-email");
-    if (fallbackEmailEl) fallbackEmailEl.textContent = "잠시 후 다시 열어주세요";
+    if (fallbackEmailEl) fallbackEmailEl.textContent = "Please reopen in a moment";
   }
 
   switchDetailTab("stats");
@@ -2465,7 +2469,7 @@ async function openDetail(person, rowIndex) {
   document.getElementById("mp-detail").scrollTop = 0;
 
   const profileEl = document.getElementById("mp-desc-profile-content");
-  if (profileEl) profileEl.innerHTML = '<p class="mp-desc-profile-empty">로딩 중...</p>';
+  if (profileEl) profileEl.innerHTML = '<p class="mp-desc-profile-empty">Loading...</p>';
   loadDescriptions(gmailId).then((descs) => renderDescription(person, descs));
 
   await refreshDetailStats(person);
@@ -2481,11 +2485,11 @@ async function openMessengerDetail(person) {
   currentDetailPerson = null;
   currentMessengerPerson = person;
 
-  document.getElementById("mp-tab-stats").textContent = "메신저 통계";
+  document.getElementById("mp-tab-stats").textContent = "Messenger stats";
   // mp-stats-title 텍스트를 메신저 모드에 맞게 "메신저 통계"로 갱신한다.
-  document.getElementById("mp-stats-title").textContent = "메신저 통계";
-  document.getElementById("mp-tab-desc").textContent = "관계";
-  document.getElementById("mp-tab-kw").textContent = "키워드";
+  document.getElementById("mp-stats-title").textContent = "Messenger stats";
+  document.getElementById("mp-tab-desc").textContent = "Relationships";
+  document.getElementById("mp-tab-kw").textContent = "Keywords";
 
   document.querySelector(".mp-detail-self-info").style.display = "none";
   document.getElementById("mp-detail-avatar-self").style.display = "none";
@@ -2507,9 +2511,9 @@ async function openMessengerDetail(person) {
   const affinityLabelEl = document.getElementById("mp-detail-affinity-label");
   if (affinityLabelEl) affinityLabelEl.innerHTML = "";
 
-  document.getElementById("mp-detail-name").textContent = person.name || "(알 수 없음)";
+  document.getElementById("mp-detail-name").textContent = person.name || "(Unknown)";
   document.getElementById("mp-detail-email").textContent =
-    `단톡방 참여자 · 메신저 ${person.message_count || 0}건`;
+    `Group chat member · ${person.message_count || 0} messages`;
 
   // 메일 쪽 "설명" 탭처럼 "참여 패턴: ..." 형식의 줄을 라벨/값으로 나눠 보여준다.
   const descEl = document.getElementById("mp-detail-messenger-desc");
@@ -2517,7 +2521,7 @@ async function openMessengerDetail(person) {
     const rawDesc = applyMessengerDescriptionOverride(currentChatroomName, person);
 
     if (!rawDesc) {
-      descEl.innerHTML = '<span class="mp-msg-desc-empty">등록된 설명이 없습니다.</span>';
+      descEl.innerHTML = '<span class="mp-msg-desc-empty">No description available.</span>';
     } else {
       // 참여 패턴/자주 하는 이야기/말투 — 항상 항목당 1줄씩(최대 3줄) 보여준다.
       // 각 줄은 ellipsis로 한 줄만 유지해서 .mp-detail-header의 고정 height:25%를
@@ -2550,7 +2554,7 @@ async function openMessengerDetail(person) {
           const toggleRow = document.createElement("div");
           toggleRow.className = "mp-msg-desc-toggle-row";
           toggleRow.innerHTML =
-            '<button type="button" class="mp-msg-desc-toggle">자세히 보기<i class="bi bi-chevron-down"></i></button>';
+            '<button type="button" class="mp-msg-desc-toggle">Show more<i class="bi bi-chevron-down"></i></button>';
           descEl.appendChild(toggleRow);
           const toggleBtn = toggleRow.querySelector(".mp-msg-desc-toggle");
           toggleBtn.addEventListener("click", () => toggleMessengerDescExpand(toggleBtn, popoverHtml));
@@ -2568,7 +2572,7 @@ async function openMessengerDetail(person) {
   document.getElementById("mp-detail").scrollTop = 0;
 
   document.getElementById("mp-desc-profile-content").innerHTML =
-    '<p class="mp-desc-profile-empty">관계를 불러오는 중...</p>';
+    '<p class="mp-desc-profile-empty">Loading relationships...</p>';
   try {
     const res = await fetch("/chatroom-relationships", {
       method: "POST",
@@ -2600,9 +2604,9 @@ async function openMessengerDetail(person) {
 // 선택 기간 기준으로 메신저 상세 패널의 교환 통계·키워드를 다시 조회해 갱신
 async function refreshMessengerDetailStats(person) {
   document.getElementById("mp-chart").innerHTML =
-    '<span style="color:#a0b8b0;font-size:0.82rem;">로딩 중...</span>';
+    '<span style="color:#a0b8b0;font-size:0.82rem;">Loading...</span>';
   document.getElementById("mp-detail-wc").innerHTML =
-    '<span style="color:#a0b8b0;font-size:0.82rem;">로딩 중...</span>';
+    '<span style="color:#a0b8b0;font-size:0.82rem;">Loading...</span>';
 
   const dateBody = {
     chatroom_id: currentChatroomId,
@@ -2902,7 +2906,7 @@ export function initMyPeoplePage() {
   brandFilterBtn.addEventListener("click", () => {
     hideBrandAccounts = !hideBrandAccounts;
     brandFilterBtn.classList.toggle("active", hideBrandAccounts);
-    brandFilterLabel.textContent = hideBrandAccounts ? "광고 표시" : "광고 제거";
+    brandFilterLabel.textContent = hideBrandAccounts ? "Show ads" : "Hide ads";
     renderCards();
   });
 
